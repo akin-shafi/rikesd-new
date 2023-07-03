@@ -1,0 +1,11 @@
+2023-03-27 11:31:55 | Notary Assessment: Bisi Akinropo signup for assessment.
+2023-05-08 19:09:17 | Blog updated: {Admin} .
+2023-05-08 20:22:53 | Category updated: {Admin} .
+2023-05-08 20:23:17 | Category created: {Admin} .
+2023-05-09 09:31:39 | Blog created: {Admin} .
+2023-05-09 09:37:11 | Blog updated: {Admin} .
+2023-05-09 09:39:53 | Blog updated: {Admin} .
+2023-05-09 10:04:50 | Blog updated: {Admin} .
+2023-05-09 10:06:40 | Blog updated: {Admin} .
+2023-05-11 18:02:57 | Blog created: {Admin} .
+2023-05-11 18:04:05 | Blog updated: {Admin} .
