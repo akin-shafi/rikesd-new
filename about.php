@@ -37,7 +37,14 @@
             <div class="col-lg-8 px-5 py-6 my-lg-0 bg-white rounded-lg-te-lg rounded-be-lg rounded-bs-lg rounded-lg-bs-0 d-flex align-items-center">
               <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <h5 data-zanim-xs='{"delay":0}'>Message From Founder</h5>
-                <p class="my-4" data-zanim-xs='{"delay":0.1}'>RikeSD co-operates with clients in solving the hardest problems they face in their businesses—and the world. We do this by channeling the diversity of our people and their thinking. </p><img data-zanim-xs='{"delay":0.2}' src="assets/img/signature.png" width="100" alt="CEO" />
+                <p class="my-4" data-zanim-xs='{"delay":0.1}'>
+                  At the core of our service delivery to the Global communities from Africa to the world is the research-innovation-enterprise- development impact investments. 
+                  <br /><br />
+                  As I lead the team of impact actors and change maker that are set to connect RIDE impacts to communities, we are poised to create an innovative and functional polygonal nexus of Governments, Academia, businesses/industries, communities and funders. 
+                  With our globally accomplished members of the Board of Directors, we are confident of playing pivot roles in connected sustainable development of Africa where Africans have new experiences of shared prosperity within the context of emerging knowledge economy.
+                  <br /><br /> 
+                  Working with our global partners, we are determined to birth a new circular Africa by 2030.
+                </p><img data-zanim-xs='{"delay":0.2}' src="assets/img/signature.png" width="100" alt="CEO" />
                 <h5 class="text-uppercase mt-3 fw-medium mb-1" data-zanim-xs='{"delay":0.3}'>Dr. Mustapha Ayo Popoola</h5>
                 <h6 class="text-500 fw-semi-bold" data-zanim-xs='{"delay":0.4}'>Executive Director and Founder</h6>
               </div>
@@ -50,12 +57,44 @@
             </div>
             <div class="col-12">
               <div class="bg-white px-3 mt-6 px-0 py-5 px-lg-5 rounded-3">
-                <h5>Earning the right</h5>
-                <p class="mt-3">As a leading pan-African non-profit organization, RikeSD is dedicated to empowering companies, foundations, and individuals to make a lasting impact. Our comprehensive approach addresses critical issues at their core. We transcend traditional boundaries, recognizing that solving challenges such as economic security, human rights, and climate sustainability requires a multi-faceted approach. By leveraging advocacy, collaboration, investment, philanthropy, policy initiatives, and innovative business practices, we provide a tailored formula to drive meaningful progress towards your goals. Together, we can create a better future.</p>
+                <h5>RikeSD Impact investment ecosystem</h5>
+                <p class="mt-3">
+                We are team of change agents that have resolved to change the negative
+                development narratives of Sub-Saharan Africa, Middle, East and North Africa
+                using the instrumentality of Research, innovation, creativity, inventions and
+                discoveries for sustainable community and enterprise development. 
+                <br /><br />
+                Our domain of 
+                activities resides with the global Science, Technology and Innovation ecosystem with functional tangential 
+                interlinks with various activity sectors of national economies. 
+                <!-- <br /><br /> -->
+                In practice, we are a body of a pan African not for profit knowledge management enterprise with a clear goal of connecting research and innovation systems to our communities to ensure sustainable development.
+
+                </p>
                 <blockquote class="blockquote my-5 ms-lg-6" style="max-width: 700px;">
-                  <h5 class="fw-medium ms-3 mb-0">But how do we do it? We like to call it earning the right, walking the talk and playing the game &hellip;</h5>
+                  <h5 class="fw-medium ms-3 mb-0">But how do we do it? engage crowd resourcing for our projects beyond funding, in tandem with subnational, national, regional, continental and global development agenda &hellip;</h5>
                 </blockquote>
-                <p class="column-lg-2 dropcap">RikeSD serves to help people with creative ideas succeed. Our platform empowers millions of people — from individuals and local artists to entrepreneurs shaping the world’s most iconic businesses — to share their stories and create an impactful, stylish, and easy-to-manage online presence. The Cambridge office is the home of the Risk management practice. We work to assure the safe performance of complex critical systems; develop safety leadership and culture; manage safety and risk in high-hazard industries; understand complex project risks, measure and report risk performance. We work across a wide range of industries and public sector organizations that include upstream and downstream oil and gas; rail and road transportation; construction; and gas utilities and distribution. We work across Africa.</p>
+                <p class="column-lg-2 dropcap">
+                Our acronym RIKESD (Research for Impact, Knowledge Economy & Sustainable Development) is unique and symbolic in the global STI ecosystem because of our innovative strategies of problem solving geared toward society centred connected community development that guarantee sustainable development in our clime. Africa and other developing nations missed out of the millennium development goals due to obvious dysfunctional knowledge management systems and adoption of non-adaptive systems using a copy-and-paste approach. 
+                We are determined to aggregate community challenges for citizen research that will direct impact on the communities.
+
+                <br />
+
+                <span class="text-justify">
+                We are innovating the Polygonal Nexus as a novel approach to ensure both
+                sustainability and impact as the end point. The approach will ensure active
+                recognition and interconnectedness of Government, Academia, Industry, Communities & Funders being the wheels of our progress. We are
+                developing a co-creation platform for all these actors within the RIKESD ecosystem to fix the existing gap among these important stakeholders. Primarily, we plan to engage crowd resourcing for our projects beyond funding.
+                </span>
+                <br />
+
+                <span class="text-justify">
+                Our activities shall be in tandem with subnational, national, regional, continental and global development agenda in support of government at all levels 
+                in achieving collective prosperity of the citizens and residents of our communities. We are retooling the community development leg of the academia tripod while ensuring the mainstreaming of the existing academies in the academia definition. 
+                Our work plans to be unveiled during the official launch of this organization in September 2023 is youth centric and gender sensitive. 
+                We welcome our global partners for collaboration, co-creation, coordination, consolidation and cooperation in the RIKESD Impact investment ecosystem as a sustainable platform for the delivery of Sustainable Development Goals by 2030 among our nations.
+                </span>
+              </p>
               </div>
             </div>
           </div>
