@@ -6,7 +6,7 @@
  * @author  Orion Richardson <orionr@yahoo.com>
  * @author  Helmut Tischer <htischer@weihenstephan.org>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 
 // FIXME: Need to sanity check inputs to this class

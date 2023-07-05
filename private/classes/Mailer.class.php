@@ -53,8 +53,8 @@ class Mailer extends DatabaseObject
 	        // $mail->SMTPSecure = 'tls';       
 	        $mail->Username = $mailerSetup->username;					//Sets SMTP username
 			$mail->Password = $mailerSetup->password;					//Sets SMTP password                         
-	        $mail->From = $mailerSetup->fromEmail ?? "ask@gettonote.com";			//Sets the From email address for the message
-			$mail->FromName = $mailerSetup->fromName ?? "Tonote Technologies limited";			//Sets the From name of the message
+	        $mail->From = $mailerSetup->fromEmail ?? "ask@getRikeSD.com";			//Sets the From email address for the message
+			$mail->FromName = $mailerSetup->fromName ?? "RikeSD Technologies limited";			//Sets the From name of the message
 			$mail->addAddress($mailTo, $recieverName);	
 			$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of 
 	           

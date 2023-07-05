@@ -4,9 +4,9 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>ToNote Admin | <?php echo $title ?></title>
+        <title>RikeSD Admin | <?php echo $title ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Tonote is a legally binding and fully remote way to sign" name="description" />
+        <meta content="RikeSD is a legally binding and fully remote way to sign" name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo url_for('assets/images/fav.png') ?>">
@@ -32,7 +32,7 @@
             <div class="container-fluid">
 
                 <!-- LOGO -->
-                <a href="index.html" class="topnav-logo">
+                <a href="index" class="topnav-logo">
                     <span class="topnav-logo-lg">
                         <img src="<?php echo url_for('assets/images/logo-dark.png') ?>" alt="" height="26">
                     </span>

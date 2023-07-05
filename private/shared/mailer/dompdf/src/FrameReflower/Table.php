@@ -3,7 +3,7 @@
  * @package dompdf
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 namespace Dompdf\FrameReflower;
 
@@ -402,7 +402,7 @@ class Table extends AbstractFrameReflower
         $frame->position();
 
         // Table layout algorithm:
-        // http://www.w3.org/TR/CSS21/tables.html#auto-table-layout
+        // http://www.w3.org/TR/CSS21/tables#auto-table-layout
 
         if (is_null($this->_state)) {
             $this->get_min_max_width();

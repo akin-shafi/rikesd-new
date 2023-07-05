@@ -10,27 +10,12 @@ if ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.16
 	define("DB_SERVER", "localhost");
 	define("DB_USER", "root");
 	define("DB_PASS", "");
-	define("DB_NAME", "cms");
+	define("DB_NAME", "rikesd");
 }else{
 	define("DB_SERVER", "127.0.0.1");
-    define("DB_USER", "tonote_user");
-    define("DB_PASS", "@G3t2n0t3#");
-    define("DB_NAME", "tonote_cms");
+    define("DB_USER", "u135887254_admin");
+    define("DB_PASS", "Rik3sd@admin");
+    define("DB_NAME", "u135887254_rikesd");
 }
-
-// if ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.64.2') {
-//     define("DB_SERVER", "localhost");
-//     define("DB_USER", "root");
-//     define("DB_PASS", "");
-//     define("DB_NAME", "tonotedb");
-// }else{
-//     define("DB_SERVER", "localhost");
-//     define("DB_USER", "tonote_user");
-//     define("DB_PASS", "@G3t2n0t3#");
-//     define("DB_NAME", "document_management");
-// }
-
-
-
 
 ?>

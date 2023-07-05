@@ -4,9 +4,9 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>ToNote Admin | <?php echo $page_title ?></title>
+        <title>RikeSD Admin | <?php echo $page_title ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Tonote is a legally binding and fully remote way to sign" name="description" />
+        <meta content="RikeSD is a legally binding and fully remote way to sign" name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo url_for('assets/images/fav.png') ?>">
@@ -258,10 +258,10 @@
                                                 <i class="uil-dashboard me-1"></i>Dashboards <div class="arrow-down"></div>
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="topnav-dashboards">
-                                                <!-- <a href="dashboard-analytics.html" class="dropdown-item">Analytics</a> -->
+                                                <!-- <a href="dashboard-analytics" class="dropdown-item">Analytics</a> -->
                                                 <a href="<?php echo url_for('public/dashboard/') ?>" class="dropdown-item">CRM</a>
-                                                <!-- <a href="index.html" class="dropdown-item">Ecommerce</a> -->
-                                                <!-- <a href="dashboard-projects.html" class="dropdown-item">Projects</a> -->
+                                                <!-- <a href="index" class="dropdown-item">Ecommerce</a> -->
+                                                <!-- <a href="dashboard-projects" class="dropdown-item">Projects</a> -->
                                             </div>
                                         </li>
                                        <?php if (!in_array($loggedInAdmin->admin_level , [3])) { ?>
@@ -272,7 +272,7 @@
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="topnav-apps">
                                                 <a href="<?php echo url_for('public/users/') ?>" class="dropdown-item">Users</a>
-                                                <!-- <a href="apps-chat.html" class="dropdown-item">Tickets</a> -->
+                                                <!-- <a href="apps-chat" class="dropdown-item">Tickets</a> -->
                                                 
                                             </div>
                                         </li>

@@ -4822,7 +4822,7 @@ EOT;
      * string passed in.
      *
      * based on the excellent TCPDF code by Nicola Asuni and the
-     * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+     * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629
      *
      * @access private
      * @author Orion Richardson
@@ -4897,7 +4897,7 @@ EOT;
      * at the front if required.
      *
      * based on the excellent TCPDF code by Nicola Asuni and the
-     * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+     * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629
      *
      * @access private
      * @author Orion Richardson

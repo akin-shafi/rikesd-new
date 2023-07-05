@@ -21,16 +21,16 @@
             <div class="collapse" id="sidebarDashboards">
                 <ul class="side-nav-second-level">
                     <li>
-                        <a href="dashboard-analytics.html">Analytics</a>
+                        <a href="dashboard-analytics">Analytics</a>
                     </li>
                     <li>
-                        <a href="dashboard-crm.html">CRM</a>
+                        <a href="dashboard-crm">CRM</a>
                     </li>
                     <li>
-                        <a href="index.html">Ecommerce</a>
+                        <a href="index">Ecommerce</a>
                     </li>
                     <li>
-                        <a href="dashboard-projects.html">Projects</a>
+                        <a href="dashboard-projects">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
         <!-- <li class="side-nav-title side-nav-item">Apps</li> -->
 
         <li class="side-nav-item">
-            <a href="landing.html" target="_blank" class="side-nav-link">
+            <a href="landing" target="_blank" class="side-nav-link">
                 <i class="uil-globe"></i>
                 <span class="badge bg-light text-dark float-end">New</span>
                 <span> Landing </span>

@@ -20,11 +20,11 @@
   // * Can set a hardcoded value:
 
 if ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.64.2') {
-  define("WWW_ROOT", '/tonote-landing/app');
-  define("WWW_PATH", '/tonote-landing');
+  define("WWW_ROOT", '/rikesd-new/app');
+  define("WWW_PATH", '/rikesd-new');
 }else{
-  define("WWW_ROOT", '/tonote-landing/app');
-  define("WWW_PATH", '/tonote-landing');
+  define("WWW_ROOT", '/app');
+  define("WWW_PATH", '/');
 
 }
 

@@ -4,7 +4,7 @@
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 namespace Dompdf\FrameReflower;
 
@@ -52,7 +52,7 @@ class Page extends AbstractFrameReflower
         $style = $frame->get_style();
         $page_styles = $style->get_stylesheet()->get_page_styles();
 
-        // http://www.w3.org/TR/CSS21/page.html#page-selectors
+        // http://www.w3.org/TR/CSS21/page#page-selectors
         if (count($page_styles) > 1) {
             $odd = $page_number % 2 == 1;
             $first = $page_number == 1;
@@ -87,7 +87,7 @@ class Page extends AbstractFrameReflower
 
     /**
      * Paged layout:
-     * http://www.w3.org/TR/CSS21/page.html
+     * http://www.w3.org/TR/CSS21/page
      *
      * @param BlockFrameDecorator|null $block
      */

@@ -16,7 +16,7 @@
 | Copyright (c) 2001-2003, Brent R. Matzelle                                |
 | ------------------------------------------------------------------------- |
 |   License: Distributed under the Lesser General Public License (LGPL)     |
-|            http://www.gnu.org/copyleft/lesser.html                        |
+|            http://www.gnu.org/copyleft/lesser                        |
 | This program is distributed in the hope that it will be useful - WITHOUT  |
 | ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
 | FITNESS FOR A PARTICULAR PURPOSE.                                         |
@@ -32,7 +32,7 @@
  * @author Jim Jagielski
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 
 if (version_compare(PHP_VERSION, '5.0.0', '<') ) {
@@ -2548,7 +2548,7 @@ class PHPMailer {
      */
   public function html2text($html, $advanced = false) {
     if ($advanced) {
-      require_once 'extras/class.html2text.php';
+      require_once 'extras/class2text.php';
       $h = new html2text($html);
       return $h->get_text();
     }

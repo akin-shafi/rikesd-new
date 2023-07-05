@@ -9,3 +9,4 @@
 2023-05-09 10:06:40 | Blog updated: {Admin} .
 2023-05-11 18:02:57 | Blog created: {Admin} .
 2023-05-11 18:04:05 | Blog updated: {Admin} .
+2023-07-04 16:58:53 | Category created: {Admin} .

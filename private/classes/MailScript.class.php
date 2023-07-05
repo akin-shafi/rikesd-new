@@ -10,13 +10,13 @@ class MailScript extends DatabaseObject
             $recieverName = $options['recieverName'] ?? false;
 
             $recipients = [
-                  'shafi@gettonote.com' => 'Shafi',
-                  'daniel@gettonote.com' => 'Daniel',
-                  'olaide@gettonote.com' => 'Olaide',
-                  'florence@gettonote.com' => 'Florence',
+                  'shafi@getRikeSD.com' => 'Shafi',
+                  'daniel@getRikeSD.com' => 'Daniel',
+                  'olaide@getRikeSD.com' => 'Olaide',
+                  'florence@getRikeSD.com' => 'Florence',
                   'nnena@thespace.com.ng' => 'Nnena',
                   'anu@thespace.com.ng' => 'Anuoluwapo',
-                  'fikayo@gettonote.com' => 'Fikayo Durosinmi-etti',
+                  'fikayo@getRikeSD.com' => 'Fikayo Durosinmi-etti',
             ];
 
             $group_email = $options['group_email'] ?? $recipients;
@@ -48,20 +48,20 @@ class MailScript extends DatabaseObject
             // $mail->Port       = 465; // Port for SSL: 465 Port for TLS/STARTTLS: 587
             
 
-            $mail->From = "ask@gettonote.com";
-            $mail->FromName = "Tonote Technologies limited";
+            $mail->From = "ask@getRikeSD.com";
+            $mail->FromName = "RikeSD Technologies limited";
 
             $mail->AddAddress($mailTo, $recieverName);
-            $mail->AddReplyTo('ask@gettonote.com', 'ToNote Technologies Limited');
+            $mail->AddReplyTo('ask@getRikeSD.com', 'RikeSD Technologies Limited');
             if($copy == true){
                 // $recipients = array(
-                //   'shafi@gettonote.com' => 'Shafi',
-                //   'daniel@gettonote.com' => 'Daniel',
-                //   'olaide@gettonote.com' => 'Olaide',
-                //   'florence@gettonote.com' => 'Florence',
+                //   'shafi@getRikeSD.com' => 'Shafi',
+                //   'daniel@getRikeSD.com' => 'Daniel',
+                //   'olaide@getRikeSD.com' => 'Olaide',
+                //   'florence@getRikeSD.com' => 'Florence',
                 //   'nnena@thespace.com.ng' => 'Nnena',
                 //   'anu@thespace.com.ng' => 'Anuoluwapo',
-                //   'fikayo@gettonote.com' => 'Fikayo Durosinmi-etti',
+                //   'fikayo@getRikeSD.com' => 'Fikayo Durosinmi-etti',
                 // );
                 foreach($group_email as $email => $name)
                 {

@@ -3,7 +3,7 @@
  * @package dompdf
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 
 namespace Dompdf\Positioner;
@@ -33,7 +33,7 @@ class Absolute extends AbstractPositioner
         $left = $style->length_in_pt($style->left, $w);
 
         if ($p && !($left === "auto" && $right === "auto")) {
-            // Get the parent's padding box (see http://www.w3.org/TR/CSS21/visuren.html#propdef-top)
+            // Get the parent's padding box (see http://www.w3.org/TR/CSS21/visuren#propdef-top)
             list($x, $y, $w, $h) = $p->get_padding_box();
         }
 

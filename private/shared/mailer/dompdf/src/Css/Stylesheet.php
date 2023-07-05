@@ -5,7 +5,7 @@
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
  * @author  Helmut Tischer <htischer@weihenstephan.org>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 namespace Dompdf\Css;
 
@@ -141,7 +141,7 @@ class Stylesheet
     /**
      * Accepted CSS media types
      * List of types and parsing rules for future extensions:
-     * http://www.w3.org/TR/REC-html40/types.html
+     * http://www.w3.org/TR/REC-html40/types
      *   screen, tty, tv, projection, handheld, print, braille, aural, all
      * The following are non standard extensions for undocumented specific environments.
      *   static, visual, bitmap, paged, dompdf
@@ -421,7 +421,7 @@ class Stylesheet
     }
 
     /**
-     * @link http://www.w3.org/TR/CSS21/cascade.html#specificity
+     * @link http://www.w3.org/TR/CSS21/cascade#specificity
      *
      * @param string $selector
      * @param int $origin :
@@ -433,7 +433,7 @@ class Stylesheet
      */
     private function _specificity($selector, $origin = self::ORIG_AUTHOR)
     {
-        // http://www.w3.org/TR/CSS21/cascade.html#specificity
+        // http://www.w3.org/TR/CSS21/cascade#specificity
         // ignoring the ":" pseudoclass modifiers
         // also ignored in _css_selector_to_xpath
 

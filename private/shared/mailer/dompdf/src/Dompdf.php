@@ -4,7 +4,7 @@
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser GNU Lesser General Public License
  */
 namespace Dompdf;
 
@@ -38,7 +38,7 @@ use Dompdf\Helpers;
  *
  * {@link Frame}s are then decorated (in the design pattern sense of the
  * word) based on their CSS display property ({@link
- * http://www.w3.org/TR/CSS21/visuren.html#propdef-display}).
+ * http://www.w3.org/TR/CSS21/visuren#propdef-display}).
  * Frame_Decorators augment the basic {@link Frame} class by adding
  * additional properties and methods specific to the particular type of
  * {@link Frame}.  For example, in the CSS layout model, block frames
@@ -654,7 +654,7 @@ class Dompdf
                 case "style":
                     // Accept all <style> tags by default (note this is contrary to W3C
                     // HTML 4.0 spec:
-                    // http://www.w3.org/TR/REC-html40/present/styles.html#adef-media
+                    // http://www.w3.org/TR/REC-html40/present/styles#adef-media
                     // which states that the default media type is 'screen'
                     if ($tag->hasAttributes() &&
                         ($media = $tag->getAttribute("media")) &&
