@@ -32,9 +32,6 @@ $members = Team::find_by_category(['category' => $activeTab, 'nda_status' => 1, 
             </ul>
         </div>
         <div id="content">
-            <!-- Content for the selected tab will be loaded here -->
-            <!-- <h3><?php //echo $boardList[$activeTab]; ?></h3> -->
-
             <div class="container">
                 <div class="text-center">
                     <div class="row mt-4">

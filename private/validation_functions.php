@@ -124,9 +124,9 @@
   }
 
   
-  function has_unique_email_agent($client_email, $current_id="0") {
+  function has_unique_applicant_email($client_email, $current_id="0") {
 
-  $email = Agent::find_by_email($client_email);
+  $email = NewProject::find_by_email($client_email);
 
     if($email === false || $email->id == $current_id) {
       // is unique

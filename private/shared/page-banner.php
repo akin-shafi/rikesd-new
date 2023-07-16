@@ -1,23 +1,24 @@
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class=" section">
-      <div class="bg-holder overlay holder-img"></div>
-      <!--/.bg-holder-->
-      <div class="container">
-        <div class="row pt-6" data-inertia='{"weight":1.5}'>
-          <div class="col-md-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-            <div class="overflow-hidden">
-              <h1 class="text-white fs-4 fs-md-5 mb-0 lh-1" data-zanim-xs='{"delay":0}'><?php echo $page_title; ?></h1>
-              <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.1}'>
-                <ol class="breadcrumb fs-1 ps-0 fw-bold">
-                  <li class="breadcrumb-item"><a class="text-white" href="#!">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
-                </ol>
-              </div>
-            </div>
+<?php
+$tab = $_GET['tab'] ?? '';
+$services = Services::find_by_id($tab) ?? 1;
+?>
+<section class="section py-0">
+  <div class="bg-holder overlay overlay-elixir" style="background-image:url(../assets/img/background-14.jpg);"></div>
+  <!--/.bg-holder-->
+  <div class="container">
+    <div class="row min-vh-25 align-items-center text-white">
+      <div class="col" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+        <h4 class="text-white pt-5 mt-5">
+          <?php echo $services->item ?? '' ?></h4>
+          <div class="text-justify">
+            <p class="text-white">
+                <?php echo $services->description ?? '' ?>
+            </p>
           </div>
-        </div>
-      </div><!-- end of .container-->
-    </section><!-- <section> close ============================-->
-    <!-- ============================================-->
+      
+      </div>
+    </div>
+  </div><!-- end of .container-->
+</section>
+
+

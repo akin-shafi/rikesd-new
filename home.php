@@ -13,10 +13,12 @@ $page_title = 'Home';
                 <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
                   <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                     <div class="overflow-hidden">
-                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>Helping Leaders</h1>
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>Empowering communities</h1>
+                      
                     </div>
                     <div class="overflow-hidden">
-                      <p class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>Empowering Leaders through Research-Driven Growth and Sustainable Development.</p>
+                      <p class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>
+                      Empowering communities through Research-Driven Growth for Sustainable Development.</p>
                     </div>
                     <div class="overflow-hidden">
                       <div data-zanim-xs='{"delay":0.2}'>
@@ -79,6 +81,7 @@ $page_title = 'Home';
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
+      
       <section class="section bg-white text-center">
         <div class="container">
           <div class="row justify-content-center text-center">
@@ -122,7 +125,7 @@ $page_title = 'Home';
       <!-- <section> begin ============================-->
       <section class="section pt-0">
         <div class="container">
-          <div class="row flex-center text-center pb-6 d-none">
+          <div class="row flex-center text-center pb-6">
             <div class="col-12">
               <div class="position-relative mt-4 py-5 py-md-11">
                 <div class="bg-holder rounded-3" style="background-image:url(assets/img/video-screenshot-2.jpg);"></div>
@@ -452,7 +455,7 @@ $page_title = 'Home';
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="section ">
+      <section class="section d-none">
         <div class="bg-holder overlay overlay-RIKESD" style="background-image:url(assets/img/background-15.jpg);"></div>
         <!--/.bg-holder-->
         <div class="container">
@@ -616,13 +619,45 @@ $page_title = 'Home';
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
+<!-- Modal -->
+<div class="modal fade" id="launchModal" tabindex="-1" role="dialog" aria-labelledby="launchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-0">
+                <div class="row p-0">
+                    <!-- Left Side -->
+                    <div class="col-md-4 p-0">
+                        <img src="<?php echo url_for_root('assets/img/lauch-banner.png') ?>" alt="Event Flyer" class="img-fluid">
+                    </div>
+                    <!-- Right Side -->
+                    <div class="col-md-8 d-flex justify-content-center align-items-center bg-light">
+                        <div class="">
+                            <div class="text-center p-4">
+                                <img src="<?php echo url_for_root('assets/img/logo-dark.png') ?>" width="150" />
+                            </div>
+                            <h4 class="text-uppercase text-center">Official launch</h4>
+                            <p>Unlocking the Power of Research: Empowering Knowledge-Based Economy and Sustainable Development</p>
+                            <div class="text-dark">
+                                <p><strong>Date: Sep 5, 2023</strong></p>
+                                <p><strong>Time: 11 AM.</strong></p>
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="text-uppercase ls text-dark fs-0 fs-md-1 countdown" data-zanim-xs='{"delay":0.2}'></h5>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfp8reQk0jdutytNLipbBvDEtlmtM5GngltH7lzgp1H8Z9aPg/viewform?usp=sf_link" target="_blank" class="btn btn-primary">Book your space</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
-    <!--===============================================-->
-    <!--    Footer-->
-    <!--===============================================-->
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <?php include(SHARED_PATH . '/main-footer.php'); ?>
+  
+<?php include(SHARED_PATH . '/main-footer.php'); ?>
+    

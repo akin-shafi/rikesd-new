@@ -209,11 +209,12 @@ function get_array_from_obj($object = [], $attr=''){
     }
     return $array;
   } else {
-    $array[] = $obj->$attr;
+    // $array[] = $obj->$attr;
   }
   
   return $array;
 }
+
 
 
 

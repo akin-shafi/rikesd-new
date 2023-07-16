@@ -278,7 +278,7 @@ class DatabaseObject {
         if ($order) {
           $sql .= " ORDER BY id " . self::$database->escape_string($order) . " ";
         }else{
-          $sql .= " ORDER BY id DESC ";
+          $sql .= " ORDER BY id ASC ";
         }
         // echo $sql;
 

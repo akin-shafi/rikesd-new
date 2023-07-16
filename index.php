@@ -1,5 +1,4 @@
-<?php
-// Redirect to the home page
-header("Location: /home");
+<?php require_once('private/initialize.php');
+	redirect_to(url_for_root('/home'));
 exit();
 ?>

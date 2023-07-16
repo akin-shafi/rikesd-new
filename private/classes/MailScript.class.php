@@ -10,13 +10,10 @@ class MailScript extends DatabaseObject
             $recieverName = $options['recieverName'] ?? false;
 
             $recipients = [
-                  'shafi@getRikeSD.com' => 'Shafi',
-                  'daniel@getRikeSD.com' => 'Daniel',
-                  'olaide@getRikeSD.com' => 'Olaide',
-                  'florence@getRikeSD.com' => 'Florence',
-                  'nnena@thespace.com.ng' => 'Nnena',
-                  'anu@thespace.com.ng' => 'Anuoluwapo',
-                  'fikayo@getRikeSD.com' => 'Fikayo Durosinmi-etti',
+                  'shafi@rikesd.org' => 'Shafi',
+                  'mpopoola@rikesd.org' => 'Dr. Mustapha Ayo P',
+                  'honmusty@gmail.com' => 'Dr. Mustapha Ayo P',
+                  'oolabisi@rikesd.org' => 'Dr. Mustapha Ayo P',
             ];
 
             $group_email = $options['group_email'] ?? $recipients;
@@ -30,12 +27,12 @@ class MailScript extends DatabaseObject
             $mail->CharSet = 'UTF-8';
             
             // // localhost method
-            $mail->Host       = "localhost"; // SMTP server example
+            $mail->Host       = "smtp.hostinger.com"; // SMTP server example
             $mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
             $mail->SMTPAuth   = true;                  // enable SMTP authentication
-            $mail->Port       = 25;                    // set the SMTP port for the GMAIL server
-            $mail->Username   = "u474mp54g1x5"; // SMTP account username example
-            $mail->Password   = "@G3t2n0t3#";        // SMTP account password example
+            $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
+            $mail->Username   = "admin@rikesd.org"; // SMTP account username example
+            $mail->Password   = "Admin@rik3sd";        // SMTP account password example
 
 
             //smtp method
@@ -48,11 +45,11 @@ class MailScript extends DatabaseObject
             // $mail->Port       = 465; // Port for SSL: 465 Port for TLS/STARTTLS: 587
             
 
-            $mail->From = "ask@getRikeSD.com";
-            $mail->FromName = "RikeSD Technologies limited";
+            $mail->From = "admin@rikesd.org";
+            $mail->FromName = "RIKESD";
 
             $mail->AddAddress($mailTo, $recieverName);
-            $mail->AddReplyTo('ask@getRikeSD.com', 'RikeSD Technologies Limited');
+            $mail->AddReplyTo('rikesd22@gmail.com', 'Research for Impact, Knowledge Based Economy and Sustainable Development');
             if($copy == true){
                 // $recipients = array(
                 //   'shafi@getRikeSD.com' => 'Shafi',

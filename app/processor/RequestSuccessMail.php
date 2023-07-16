@@ -6,19 +6,19 @@
         $full_name = $firstname ." ". $lastname;
         $email = strip_tags ($_POST['email']);
         $phone = strip_tags($_POST['phone']) ?? "";
-        $subject = "Request a notary session";
+        $subject = "Submited a project request";
         $body = "
             <p>Hello ". $firstname ."</p>
-            <p>Thank you for completing our Request Form.</p>
+            <p>Thank you for completing our project request form.</p>
 
             <p>Your form is currently being reviewed.</p> 
 
             <p>A member of our team will reach out to you once your information has been verified.</p>
-
+            
             <p>
                 <div>Regards,<br></div>
                 <h3 style=\"color: #063BB3; font-family: Poppins \">The RikeSD Team.</h3>
-                <div>W: www.getRikeSD.com <br /> A: 1625b Saka Jojo Street, Victoria Island, Lagos  </div>
+                <div>W: www.rikesd.ord <br /> A: 10, Lord Lugard street, Asokoro Abuja, Nigeria  </div>
             </p>
 
         ";

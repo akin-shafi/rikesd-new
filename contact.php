@@ -30,7 +30,11 @@ $page_title = "Contact";
             <div class="col-lg-4 mb-4 mb-lg-0">
               <div class="card h-100">
                 <div class="card-body px-5">
-                  <h5>Socials</h5><a class="d-inline-block mt-2" href="#!"><span class="fab fa-linkedin fs-2 me-2 text-primary"></span></a><a class="d-inline-block mt-2" href="#!"><span class="fab fa-twitter-square fs-2 mx-2 text-primary"></span></a><a class="d-inline-block mt-2" href="#!"><span class="fab fa-facebook-square fs-2 mx-2 text-primary"></span></a><a class="d-inline-block mt-2" href="#!"><span class="fab fa-google-plus-square fs-2 ms-2 text-primary"></span></a>
+                  <h5>Socials</h5>
+                  <a class="d-inline-block mt-2" href="https://www.linkedin.com/in/rikesd-global-5a6a84275/"><span class="fab fa-linkedin fs-2 me-2 text-primary"></span></a>
+                  <a class="d-inline-block mt-2" href="https://twitter.com/rikesdglobal?s=11&t=r8ddyLnDXZS7xPjADm0Ocg"><span class="fab fa-twitter-square fs-2 mx-2 text-primary"></span></a>
+                  <!-- <a class="d-inline-block mt-2" href="#!"><span class="fab fa-facebook-square fs-2 mx-2 text-primary"></span></a> -->
+                  <!-- <a class="d-inline-block mt-2" href="#!"><span class="fab fa-google-plus-square fs-2 ms-2 text-primary"></span></a> -->
                 </div>
               </div>
             </div>
