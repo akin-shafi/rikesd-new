@@ -25,8 +25,6 @@
                   <li class="mb-3"><a class="text-white" href="#!">FAQ</a></li>
                   <li class="mb-3"><a class="text-white" href="#!">Privacy Policy</a></li>
                   <li class="mb-3"><a class="text-white" href="#!">Terms of Use</a></li>
-                  <!-- <li class="mb-3"><a class="text-white" href="#!">Global Office</a></li> -->
-                  <!-- <li class="mb-3"><a class="text-white" href="#!">Local Office</a></li> -->
                 </ul>
               </div>
               <div class="col-6 col-sm-5 ms-sm-auto">
@@ -37,12 +35,6 @@
                   <li class="mb-3"><a class="text-decoration-none d-flex align-items-center" href="https://twitter.com/rikesdglobal?s=11&t=r8ddyLnDXZS7xPjADm0Ocg"> <span class="brand-icon me-3"><span class="fab fa-twitter"></span></span>
                       <h5 class="fs-0 text-white mb-0 d-inline-block">Twitter</h5>
                     </a></li>
-                  <!-- <li class="mb-3"><a class="text-decoration-none d-flex align-items-center" href="#!"> <span class="brand-icon me-3"><span class="fab fa-facebook-f"></span></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">Facebook</h5>
-                    </a></li>
-                  <li class="mb-3"><a class="text-decoration-none d-flex align-items-center" href="#!"> <span class="brand-icon me-3"><span class="fab fa-google-plus-g"></span></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">Google+</h5>
-                    </a></li> -->
                 </ul>
               </div>
             </div>
@@ -67,7 +59,6 @@
 
     
     <script src="<?php echo url_for_root('assets/js/jquery.min.js') ?>"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 
     <script src="<?php echo url_for_root('vendors/popper/popper.min.js') ?>"></script>
     <script src="<?php echo url_for_root('vendors/bootstrap/bootstrap.min.js') ?>"></script>

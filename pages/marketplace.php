@@ -66,44 +66,46 @@ $services = Services::find_by_id($activeTab) ?? 1;
         <!-- Search panel (responsive for all screen sizes) -->
         <div class="row d-flex justify-content-center search-panel">
           <div class="col-12 col-md-9">
-          <form id="advanced-search-form" class="d-flex">
-            <div class="input-group me-2">
-              <input id="topic-search" class="form-control" type="search" placeholder="Search by Topic" aria-label="Search by Topic">
-            </div>
+            <form id="advanced-search-form" class="d-flex flex-wrap justify-content-center">
+              <div class="input-group mb-2 col-sm-12 col-md-4 col-lg-3">
+                <input id="topic-search" class="form-control" type="search" placeholder="Search by Topic" aria-label="Search by Topic">
+              </div>
 
-            <div class="input-group me-2">
-              <select id="area-of-interest" class="form-select select2">
-                <option value="" selected disabled>Select Area of Interest</option>
-                <option value="field1">Field 1</option>
-                <option value="field2">Field 2</option>
-                <!-- Populate the dropdown with more than 30 professional fields -->
-                <!-- Add more options as needed -->
-              </select>
-            </div>
+              <div class="input-group mb-2 col-sm-12 col-md-4 col-lg-3">
+                <select id="area-of-interest" class="form-select select2">
+                  <option value="" selected disabled>Select Area of Interest</option>
+                  <option value="field1">Field 1</option>
+                  <option value="field2">Field 2</option>
+                  <!-- Populate the dropdown with more than 30 professional fields -->
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
 
-            <div class="input-group me-2">
-              <select id="country" class="form-select select2">
-                <option value="" selected disabled>Select Country</option>
-                <!-- Populate the dropdown with countries categorized by continent -->
-                <optgroup label="Africa">
-                  <option value="country1">Country 1</option>
-                  <option value="country2">Country 2</option>
-                  <!-- Add more African countries as needed -->
-                </optgroup>
-                <optgroup label="Asia">
-                  <option value="country3">Country 3</option>
-                  <option value="country4">Country 4</option>
-                  <!-- Add more Asian countries as needed -->
-                </optgroup>
-                <!-- Add optgroups for other continents with their respective countries -->
-              </select>
-            </div>
+              <div class="input-group mb-2 col-sm-12 col-md-4 col-lg-3">
+                <select id="country" class="form-select select2">
+                  <option value="" selected disabled>Select Country</option>
+                  <!-- Populate the dropdown with countries categorized by continent -->
+                  <optgroup label="Africa">
+                    <option value="country1">Country 1</option>
+                    <option value="country2">Country 2</option>
+                    <!-- Add more African countries as needed -->
+                  </optgroup>
+                  <optgroup label="Asia">
+                    <option value="country3">Country 3</option>
+                    <option value="country4">Country 4</option>
+                    <!-- Add more Asian countries as needed -->
+                  </optgroup>
+                  <!-- Add optgroups for other continents with their respective countries -->
+                </select>
+              </div>
 
-            <button class="btn btn-primary btn-sm border-2  ms-auto my-3 my-lg-0" type="submit">Search</button>
-          </form>
-
+              <div class="input-group mb-2 col-sm-12 col-md-4 col-lg-2">
+                <button class="btn btn-primary btn-sm w-100" type="submit">Search</button>
+              </div>
+            </form>
           </div>
         </div>
+
         <div class="card mt-5" data-zanim-xs='{"delay":0.1,"duration":1}'>
           <div class="card-body p-md-5" id="formbody">
             <div id="content">
