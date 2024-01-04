@@ -2,7 +2,7 @@
 class Services extends DatabaseObject
 {
     protected static $table_name = "services";
-    protected static $db_columns = ['id', 'item',  'page', 'description', 'category', 'sub_category', 'created_at', 'deleted'];
+    protected static $db_columns = ['id', 'item',  'page', 'description', 'category', 'sub_category', 'has_sub','created_at', 'deleted'];
 
     public $id;
     public $item;
@@ -10,6 +10,8 @@ class Services extends DatabaseObject
     public $description;
     public $category;
     public $sub_category;
+    public $has_sub;
+    
     public $created_at;
     public $deleted;
 
@@ -23,6 +25,7 @@ class Services extends DatabaseObject
         $this->description = $args['description'] ?? '';
         $this->category = $args['category'] ?? '';
         $this->sub_category = $args['sub_category'] ?? '';
+        $this->has_sub = $args['has_sub'] ?? '';
         $this->created_at = $args['created_at'] ?? '';
         $this->deleted = $args['deleted'] ?? '';
     }
@@ -38,7 +41,7 @@ class Services extends DatabaseObject
           $sql .= " AND category='" . self::$database->escape_string($category) . "'";
         }
 
-        if ($sub_category) {
+        if (isset($sub_category)) {
             $sql .= " AND sub_category='" . self::$database->escape_string($sub_category) . "'";
           }
         

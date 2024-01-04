@@ -202,7 +202,7 @@
   margin: 0;
   background: #FFF;
   color: #000; }
-.gray-theme.fr-box.fr-inline .fr-command.fr-btn-switch {
+.gray-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch {
   top: 0;
   right: 0;
   background: #FFF;
@@ -230,10 +230,10 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-  .gray-theme.fr-box.fr-inline .fr-command.fr-btn-switch i {
+  .gray-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch i {
     font-size: 24px;
     width: 24px; }
-  .gray-theme.fr-box.fr-inline .fr-command.fr-btn-switch.fr-desktop:hover {
+  .gray-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {
     background: #e8e8e8; }
 .gray-theme.fr-popup .fr-layer.fr-color-hex-layer {
   margin: 0;

@@ -26,8 +26,5 @@ $list = ['', 'Discover', 'MarketPlace', 'Collaborate', 'Fund a research', 'RDI I
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-    </main><!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
 
     <?php include(SHARED_PATH . '/main-footer.php'); ?>

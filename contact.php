@@ -11,7 +11,7 @@ $page_title = "Contact";
       <section class="section bg-100">
         <div class="container">
           <div class="row align-items-stretch justify-content-center mb-4">
-            <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="col-lg-4 mb-4 mb-lg-0 ">
               <div class="card h-100">
                 <div class="card-body px-5">
                   <h5 class="mb-3">Abuja Nigeria Office</h5>
@@ -62,9 +62,5 @@ $page_title = "Contact";
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
-
-    </main><!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
 
 <?php include(SHARED_PATH . '/main-footer.php'); ?>

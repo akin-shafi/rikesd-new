@@ -2,8 +2,8 @@
 	require_once('../../../../private/initialize.php');
 	$args = $_POST;
 	$admin = New Admin($args);
-	// $result_set = $admin->save();
-	$result_set = true;
+	$result_set = $admin->save();
+	// $result_set = true;
 	if ($result_set == true) {
 		exit(json_encode([
 			'msg' => 'Created Successful', 

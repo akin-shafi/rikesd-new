@@ -9,28 +9,9 @@ $page_title = "About";
       <!-- <section> begin ============================-->
       <section class="section bg-100">
         <div class="container">
-          <div class="row g-0">
-            <div class="col-lg-4 py-3 py-lg-0 position-relative" style="min-height:400px; background-position: top">
-              <div class="bg-holder rounded-ts-lg rounded-lg-bs-lg rounded-te-lg rounded-lg-te-0" style="background-size: cover; background-image:url(assets/img/leaders/map.jpg);"></div>
-              <!--/.bg-holder-->
-            </div>
-            <div class="col-lg-8 px-5 py-6 my-lg-0 bg-white rounded-lg-te-lg rounded-be-lg rounded-bs-lg rounded-lg-bs-0 d-flex align-items-center">
-              <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <h5 data-zanim-xs='{"delay":0}'>Message From Founder</h5>
-                <p class="my-4" data-zanim-xs='{"delay":0.1}'>
-                  At the core of our service delivery to the Global communities from Africa to the world is the research-innovation-enterprise- development impact investments. 
-                  <br /><br />
-                  As I lead the team of impact actors and change makers that are set to connect RIDE impacts to communities, we are poised to create an innovative and functional polygonal nexus of Governments, Academia, businesses/industries, communities and funders. 
-                  With our globally accomplished members of the Board of Directors, we are confident of playing pivotal roles in connected sustainable development of Africa where Africans have new experiences of shared prosperity within the context of emerging knowledge economy.
-                  <br /><br /> 
-                  Working with our global partners, we are determined to birth a new circular Africa by 2030.
-                </p><img data-zanim-xs='{"delay":0.2}' src="assets/img/signature.png" width="100" alt="CEO" />
-                <h5 class="text-uppercase mt-3 fw-medium mb-1" data-zanim-xs='{"delay":0.3}'>Dr. Mustapha Ayo Popoola</h5>
-                <h6 class="text-500 fw-semi-bold" data-zanim-xs='{"delay":0.4}'>Executive Director and Founder</h6>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-6">
+          
+          
+          <div class="row mt-1">
             <div class="col">
               <h3 class="text-center fs-2 fs-md-3">Organisation Overview</h3>
               <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
@@ -83,44 +64,4 @@ $page_title = "About";
       <!-- ============================================-->
 
 
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section">
-        <div class="bg-holder overlay overlay-RIKE-SD" style="background-image:url(assets/img/background-15.jpg);"></div>
-        <!--/.bg-holder-->
-        <div class="container">
-          <div class="d-flex"><span class="me-3"> <img src="assets/img/checkmark.png" alt="checkmark" style="width: 55px"/></span>
-            <div class="flex-1">
-              <h2 class="text-success fs-3 fs-lg-4">Take the right step,<br /><span class="text-white">do the big things.</span></h2>
-              <div class="row mt-4 pe-lg-10">
-                <div class="overflow-hidden col-md-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                  <div class="fs-3 fs-lg-4 mb-0 fw-bold text-white mt-lg-5 mt-3 lh-xs" data-zanim-xs='{"delay":0.1}' data-countup='{"endValue":52}'>52</div>
-                  <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>Cases Solved</h6>
-                </div>
-                <div class="overflow-hidden col col-lg-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                  <div class="fs-3 fs-lg-4 mb-0 fw-bold text-white mt-lg-5 mt-3 lh-xs" data-zanim-xs='{"delay":0.1}' data-countup='{"endValue":164}'>164</div>
-                  <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>Trained Experts</h6>
-                </div>
-                <div class="w-100 d-flex d-lg-none"></div>
-                <div class="overflow-hidden col-md-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                  <div class="fs-3 fs-lg-4 mb-0 fw-bold text-white mt-lg-5 mt-3 lh-xs" data-zanim-xs='{"delay":0.1}' data-countup='{"endValue":38}'>38</div>
-                  <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>Branches</h6>
-                </div>
-                <div class="overflow-hidden col col-lg-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                  <div class="fs-3 fs-lg-4 mb-0 fw-bold text-white mt-lg-5 mt-3 lh-xs" data-zanim-xs='{"delay":0.1}' data-countup='{"endValue":100}'>100</div>
-                  <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>Satisfied Clients</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-    </main><!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
   <?php include(SHARED_PATH . '/main-footer.php'); ?>

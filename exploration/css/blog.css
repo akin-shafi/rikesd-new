@@ -1,0 +1,120 @@
+    .blog-content{
+        text-align: justify;
+    }
+    .featured-post {
+        /* background: linear-gradient(129.03deg, #003BB3 0.86%, rgba(0, 59, 179, 0.8) 45.06%, rgba(0, 59, 179, 0.2) 100%); */
+        background: linear-gradient(129.03deg, #09704a 0.86%, #01754a 45.06%, #36b36a 100%);
+    }
+
+    
+  .featured-post .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    /* or 143% */
+    color: #FFFFFF;
+  }
+  .featured-post .body{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #FFFFFF;
+  }
+  .featured-post small {
+    color: #FFFFFF !important;
+  }
+  .category-label {
+    background-color: #F2F2F2;
+    border-radius: 50rem !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    padding: 8px;
+  }
+  .title-link .header:hover {
+    color: #2644aa;
+    text-decoration: underline;
+  }
+
+  .truncate-text-2 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+
+  .truncate-text {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+  .line-clamp {
+    font-size: 14px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+  .list-group-item {
+    padding: 0px 20px !important;
+    background-color: #F2F2F2;
+    margin-right: 10px;
+    display: flex;
+    font-size: 12px !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    position: relative;
+    height: 200px; /* set the height of your banner */
+  }
+
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* make sure the image covers the entire area */
+    opacity: 0.7; /* adjust opacity to your liking */
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+    
+.banner-text h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* add a subtle text shadow for contrast */
+
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-text  h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner-text  h1 {
+    font-size: 1.5em;
+  }
+}

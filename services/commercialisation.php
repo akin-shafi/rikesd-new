@@ -25,16 +25,16 @@ $applicationList = ['AIM for Academia', 'AIM for Industries'];
   <section class="section pt-4 bg-100 container-fluid">
     <div class="row">
         <div class="col-md-9 col-lg-9 mx-auto" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-          <h4 class="text-uppercase fs-0 fs-md-1 text-center">Research Commercialization Submission Form</h4>
+          <h4 class="text-uppercase fs-0 fs-md-1 text-center">Research commercialisation Submission Form</h4>
           <div class="card" data-zanim-xs='{"delay":0.1,"duration":1}'>
             
             <div class="card-body p-md-5" id="formbody">
               
               <div id="content">
                 <div class="container">
-                <h5 class="mb-4">Submit Your Research for Commercialization</h5>
-                <!-- <p class="lead">Submit Your Research for Commercialization</p> -->
-                <p>If you have a completed research project that you're interested in commercializing or if you're seeking potential customers for your research work, please fill out the form below. We'll review your submission and get in touch with you to discuss potential opportunities.</p>
+                <h5 class="mb-4">Submit Your Research for commercialisation</h5>
+                <!-- <p class="lead">Submit Your Research for commercialisation</p> -->
+                <p>If you have a completed research project that you're interested in commercialising or if you're seeking potential customers, uptakers and funders for your research work, please fill out the form below. We'll review your submission and get in touch with you to discuss potential opportunities.</p>
                 <form action="#" class="row" method="POST">
                 <div class="form-group mb-3 col-lg-6">
                     <label for="firstname" class="form-label">First Name <span class="text-danger">*</span></label>

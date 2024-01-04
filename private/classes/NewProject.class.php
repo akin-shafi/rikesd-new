@@ -2,7 +2,7 @@
 class NewProject extends DatabaseObject
 {
     protected static $table_name = "project_application";
-    protected static $db_columns = ['id', 'need', 'email', 'otp', 'profession', 'specialization', 'firstname', 'lastname', 'phone', 'country', 'state', 'address', 'created_at', 'updated_at'];
+    protected static $db_columns = ['id', 'need', 'email', 'otp', 'profession', 'specialization', 'firstname', 'lastname', 'phone', 'country', 'state', 'address', 'created_at', 'updated_at', 'deleted'];
 
     public $id;
     public $need;
@@ -19,6 +19,8 @@ class NewProject extends DatabaseObject
 
     public $created_at;
     public $updated_at;
+    public $deleted;
+    
 
     public $counts; 
 
@@ -37,6 +39,7 @@ class NewProject extends DatabaseObject
     $this->address = $args['address'] ?? '';
     $this->created_at = $args['created_at'] ?? '';
     $this->updated_at = $args['updated_at'] ?? '';
+    $this->deleted = $args['deleted'] ?? '';
     }
  
 

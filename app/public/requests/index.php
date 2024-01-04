@@ -1,5 +1,4 @@
-<?php 
-	require_once('../../../private/initialize.php');
+<?php require_once('../../../private/initialize.php');
 
 $page = 'Request';
 $page_title = 'All';
@@ -15,248 +14,55 @@ $status = $_GET['status'] ?? 1;
 	}
 </style>
 
+	
 	<div class="row">
-		<?php foreach (Request::STATUS as $key => $value) { 
-    		if ($key == 1) :
-    			$badge_color = "btn-danger";
-    		elseif ($key == 2):
-    			 $badge_color = "btn-warning";
-    		elseif ($key == 3):
-    			 $badge_color = "btn-primary";
-    		elseif ($key == 4):
-    			 $badge_color = "btn-success";
-    		elseif ($key == 5):
-    			 $badge_color = "btn-secondary";
-    		endif
-		?>
-		<a href="<?php echo url_for('public/requests/index.php?status='. $key); ?>" class="col-lg-2 col-md-4 col-sm-6 analytic">
-			<div class="card">
-				<div class="card-body <?php echo $status == $key ? 'active' : '' ?> d-flex justify-content-between ">
-					<div><span class="text-dark h5"><?php echo $value ?></span> </div>
-
-					<div><span class="btn rounded-pill <?php echo $badge_color ?>"><?php echo count(Request::find_by_status(['status' => $key])); ?></span></div>
-				</div>
-			</div>
-		</a>
-		<?php } ?>
-	</div>
-	<div class="row">
-		<!-- <div class="col-12"></div> -->
 		<div class="col-12">
-			<?php if (in_array($loggedInAdmin->admin_level , [1,2])) { ?>
-				<?php if ($status == 1 || $status == '') { ?>
-				<div class="d-flex justify-content-between my-3">
-					<!-- <div class="btn-group"> -->
-						<button  type="button" class="btn btn-primary mr-3" id="createTask" data-bs-toggle="modal" data-bs-target="#createTaskModal">Create New task</button>
-
-						<button type="button" class="btn btn-primary" id="assignTask" data-bs-toggle="modal" data-bs-target="#assignTaskModal">Assign Task</button>
-					<!-- </div> -->
-				</div>
-				<?php  } ?>
-			<?php } ?>
-			<?php if ($status == 4) { ?>
-			<div class="mb-4">
-				<a href="exportData.php" class="btn btn-success">Export to CSV</a>
-			</div>
-			<?php } ?>
+			
 			<div class="card">
 				<div class="card-body">
-					<table id="basic-datatable" class="table dt-responsive nowrap w-100">
-					    <thead>
-					        <tr>
-					            <th>s/n.</th>
-					            <?php if ($status == 1 || $status == '') { ?>
-					            <th>select</th>
-					            <?php  } ?>
-					            <th>Req No.</th>
-					            <th>Date</th>
-					            
-					            <th>Status</th>
-					            <th>Request Type</th>
-					            <?php if (in_array($status, [2,3,5,6])) { ?>
-					            <th>Assigned To</th>
-					            <th>Assigned Date</th>
-					            <?php  } ?>
-					            <?php if ($status == 3) { ?>
-					            <th class="bg-primary text-white">Notary In Charge</th>
-					            <th>Updated at</th>
-					            <?php  } ?>
-					            
-					            <th>C.Name</th>
-					            <th>Email</th>
-					            <?php if ($status == 1 || $status == '') { ?>
-					            <th></th>
-					        	<?php }  ?>
-					            <th>Phone</th>
-					            <th>Others</th>
-
-					        </tr>
-					    </thead>
-
-
-					    <tbody>
-					    	<?php $sn = 1; foreach (Request::find_by_status(['status' => $status]) as $key => $value) { 
-					    		// pre_r($value);
-					    		$task = Task::find_by_request_id($value->id);
-					    		$status = $value->status;
-					    		if ($status == 1) :
-					    			$badge_color = "badge-danger-lighten";
-					    		elseif ($status == 2):
-					    			 $badge_color = "badge-warning-lighten";
-					    		elseif ($status == 3):
-					    			 $badge_color = "badge-primary-lighten";
-					    		elseif ($status == 4):
-					    			 $badge_color = "badge-success-lighten";
-					    		elseif ($status == 5):
-					    			 $badge_color = "badge-secondary-lighten";
-					    		endif;
-
-					    		
-					    		
-					    	?>
-					        <tr>
-					        	
-					        	<td><?php echo $sn++ ?></td>
-					        	<?php if ($status == 1 || $status == '') { ?>
-					        	<td><input type="checkbox" class="checkbox" value="<?php echo $value->id ?>" style="width: 25px; height: 25px;" name=""></td>
-					        	<?php } ?>
-					        	<td><?php echo $value->req_no ?? '' ?></td>
-					            <td><?php echo date('M j, Y, g:i a', strtotime($value->created_at)) ?></td>
-					            
-					            <td>
-					            	<span class="badge <?php echo $badge_color ?>">
-					            	<?php echo Request::STATUS[$value->status] ?? '' ?></span>
-					            </td>
-					            <td><?php echo $value->trans_type ?></td>
-					            <?php if (in_array($status, [2,3,5,6])) { ?>
-					            	<td><?php  
-					            	$r_id = Task::find_by_request_id($value->id); 
-					            	foreach ($r_id as $key => $val) {
-					            		if ($val->admin_id == "") {
-					            			echo "Not Set";
-					            		}else{
-					            		 echo Admin::find_by_id($val->admin_id)->full_name();
-					            		}
-					            	} ?></td>
-
-					            	<td><?php  
-					            	$r_id = Task::find_by_request_id($value->id); 
-					            	foreach ($r_id as $key => $val) {
-					            		if ($val->created_at == '') {
-					            			echo "Not Set";
-					            		}else{
-					            		 echo date('M j, Y, g:i a', strtotime($val->created_at));
-					            		}
-					            	}?></td>
-					        	<?php } ?>
-					        	<?php if ($status == 3) { ?>
-						            <td class="bg-primary text-white"><?php  
-						            	$r_id = Task::find_by_request_id($value->id); 
-						            	foreach ($r_id as $key => $val) {
-						            		if ($val->notary_no == "") {
-						            			echo "Not Set";
-						            		}else{
-						            		 echo Notary::find_by_id($val->notary_no)->full_name();
-						            		}
-						            	} ?>
-						            </td>
-						            <td class=""><?php  
-						            	$r_id = Task::find_by_request_id($value->id); 
-						            	foreach ($r_id as $key => $val) {
-						            		if ($val->updated_at == "") {
-						            			echo "Not Set";
-						            		}else{
-						            		 echo date('M j, Y, g:i a', strtotime($val->updated_at));
-						            		}
-						            	} ?>
-						            </td>
-					        	<?php } ?>
-					            <td><?php echo $value->firstname ." ". $value->lastname; ?></td>
-					            <td><?php echo $value->email ?></td>
-					            <?php if ($status == 1 || $status == '') { ?>
-					            <td>
-					            	<a href="<?php echo url_for('public/requests/delete.php?id='. $value->id) ?>" class="btn btn-outline-danger btn-sm">Delete</a>
-					            </td>
-					            <?php } ?>
-					            <td><?php echo $value->phone ?></td>
-					            
-					            <td>
-					            	<table>
-					            		
-					            		<tr>
-					            			<td>Delivery Option:</td>
-					            			<td><?php echo $value->delivery_option ?></td>
-					            		</tr>
-					            		<?php if ($value->delivery_option == 'hardcopy') { ?>
-					            			<tr>
-						            			<td>Delivery Address:</td>
-						            			<td><?php echo $value->delivery_address ?></td>
-						            		</tr>
-					            		<?php } ?>
-					            		<tr>
-					            			<td>Id Type:</td>
-					            			<td ><?php echo $value->id_type ?></td>
-					            		</tr>
-					            		<tr>
-					            			<td>Id Number:</td>
-					            			<td ><?php echo $value->id_number ?></td>
-					            		</tr>
-
-					            		<tr>
-					            			<td>Photo:</td>
-					            			<td><div>
-						            				<!-- <img src="../../../inc/signup/<?php //echo $value->photo ?>" alt="<?php //echo $value->photo ?>" height="20"> -->
-						            				<a href="<?php echo '../../../inc/uploads/request/'.$value->photo; ?>" target="_blank" class="btn btn-link btn-lg text-muted mylink">
-							                            <i class="dripicons-download"></i> <?php echo $value->photo ?>
-							                        </a>
-						            			</div>
-					            			</td>
-					            		</tr>
-					            		<tr>
-					            			<td>ID Card:</td>
-					            			<td>
-					            				<div>
-					            					<a href="<?php echo '../../../inc/uploads/request/'.$value->id_card_image; ?>" target="_blank" class="btn btn-link btn-lg text-muted mylink">
-							                            <i class="dripicons-download"></i> <?php echo $value->id_card_image ?>
-							                        </a>
-					            				
-					            				</div>
-					            			</td>
-					            			
-					            		</tr>
-					            		<tr>
-					            			<td>Document:</td>
-					            			<td>
-					            				<div>
-					            					<a href="<?php echo '../../../inc/uploads/request/'.$value->documents; ?>" target="_blank" class="btn btn-link btn-lg text-muted mylink">
-							                            <i class="dripicons-download"></i> <?php echo $value->documents ?>
-							                        </a>
-						            			</div>
-					            			</td>
-					            		</tr>
-					            		<?php if ($status == 5) { ?>
-					            		<tr>
-					            			<td>Reason:</td>
-					            			<td>
-					            				<?php  
-								            	$r_id = Task::find_by_request_id($value->id); 
-								            	foreach ($r_id as $key => $val) {
-								            		if ($val->reason == "") {
-								            			echo "Not Set";
-								            		}else{
-								            		 echo $val->reason;
-								            		}
-								            	} ?>
-					            			</td>
-					            		</tr>
-					            		<?php } ?>
-					            		
-					            	</table>
-					            </td>
-					        </tr>
-					        <?php } ?>
-					    </tbody>
-					</table>
+					<div class="table-responsive">
+						<table  id="basic-datatable" class="table dt-responsive nowrap w-100">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Need</th>
+									<th>Email</th>
+									<th>OTP</th>
+									<th>Profession</th>
+									<th>Specialization</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Phone</th>
+									<th>Country</th>
+									<th>State</th>
+									<th>Address</th>
+									<th>Created At</th>
+								</tr>
+							</thead>
+							<?php $sn =1; foreach (NewProject::find_by_undeleted() as $entry): 
+							$expertise = Professions::find_by_id($entry->profession);
+							$spec = Specializations::find_by_id($entry->specialization);
+							?>
+							<tbody>
+								<tr>
+									<td><?= $sn++; ?></td>
+									<td><?= $entry->need; ?></td>
+									<td><?= $entry->email; ?></td>
+									<td><?= $entry->otp; ?></td>
+									<td><?= $expertise->profession ?? ''; ?></td>
+									<td><?= $spec->sub_profession; ?></td>
+									<td><?= $entry->firstname; ?></td>
+									<td><?= $entry->lastname; ?></td>
+									<td><?= $entry->phone; ?></td>
+									<td><?= $entry->country; ?></td>
+									<td><?= $entry->state; ?></td>
+									<td><?= $entry->address; ?></td>
+									<td><?= $entry->created_at; ?></td>
+								</tr>
+							<tbody>
+							<?php endforeach; ?>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

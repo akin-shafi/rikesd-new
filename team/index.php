@@ -8,7 +8,12 @@ $teams = Team::find_by_category([
 $members = Team::find_by_category(['category' => $activeTab, 'nda_status' => 1, 'head' => 0]);
 ?>
 <style>
-
+.line-clamp {
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical  !important;
+    overflow: hidden  !important;
+    display: -webkit-box;
+}
 @media(min-width: 768px){
     .sub-img{
         width: 318px !important;
@@ -39,26 +44,36 @@ $members = Team::find_by_category(['category' => $activeTab, 'nda_status' => 1, 
                     <?php foreach ($teams as $key => $value): ?>
                       <div class="col-sm-6 col-lg-3    ">
                           <div class="card h-100">
-                          <?php if (empty($value->photo) && $value->gender == 'male'): ?>
-                            <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/profile-male.jpg') ?>" alt="<?php echo $value->fullname ?>" />
-                          <?php elseif (!empty($value->photo) && $value->gender == 'female'): ?>
-                            <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/profile-woman-1.jpg') ?>" alt="<?php echo $value->fullname ?>" />
-                          <?php else: ?>
-                            <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/'). $value->photo; ?>" alt="<?php echo $value->fullname ?>" />
-                         <?php endif; ?>
-                          
-                          <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                              <div class="overflow-hidden">
-                              <h5 data-zanim-xs='{"delay":0}'><?php echo $value->fullname ?></h5>
-                              </div>
-                              <div class="overflow-hidden">
-                              <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->position ?></h6>
-                              </div>
-                              <div class="overflow-hidden">
-                              <p class="py-3 mb-0 text-truncated" data-zanim-xs='{"delay":0.2}'><?php echo $value->brief_biography ?></p>
-                              </div>
-                          </div>
-                          </div>
+                                <?php if (empty($value->photo) && $value->gender == 'male'): ?>
+                                    <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/profile-male.jpg') ?>" alt="<?php echo $value->fullname ?>" />
+                                <?php elseif (!empty($value->photo) && $value->gender == 'female'): ?>
+                                    <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/profile-woman-1.jpg') ?>" alt="<?php echo $value->fullname ?>" />
+                                <?php else: ?>
+                                    <img class="card-img-top img-fluid" src="<?php echo url_for_root('assets/img/leaders/'). $value->photo; ?>" alt="<?php echo $value->fullname ?>" />
+                                <?php endif; ?>
+                            
+                                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                    <div class="overflow-hidden">
+                                        <h5 data-zanim-xs='{"delay":0}'><?php echo $value->fullname ?></h5>
+                                       
+                                    </div>
+                                    
+                                    <div class="overflow-hidden ">
+                                        <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->personality ?></h6>
+                                    </div>
+                                    <div class="overflow-hidden border-top border-bottom">
+                                        <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->position ?></h6>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="py-3 mb-0 line-clamp" data-zanim-xs='{"delay":0.2}'>
+                                            <?php echo $value->brief_biography ?>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group mt-2">
+                                        <a href="<?php echo url_for_root('team/profile?id='. $value->id) ?>" class="btn btn-sm btn-primary">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
                       </div>
                     <?php endforeach; ?>
                     
@@ -66,7 +81,7 @@ $members = Team::find_by_category(['category' => $activeTab, 'nda_status' => 1, 
                       <div class="col-sm-6 col-lg-9 row">
                         <?php foreach ($members as $key => $value): ?>
                             <div class="col-sm-6 col-lg-3   mb-2  ">
-                              <div class="card">
+                              <div  class="card">
                                 <?php if (empty($value->photo) && $value->gender == 'male'): ?>
                                     <img class="card-img-top img-fluid sub-img" src="<?php echo url_for_root('assets/img/leaders/profile-male.jpg') ?>" alt="<?php echo $value->fullname ?>" />
                                 <?php elseif (empty($value->photo) && $value->gender == 'female'): ?>
@@ -74,16 +89,28 @@ $members = Team::find_by_category(['category' => $activeTab, 'nda_status' => 1, 
                                 <?php else: ?>
                                     <img class="card-img-top img-fluid sub-img" src="<?php echo url_for_root('assets/img/leaders/'). $value->photo; ?>" alt="<?php echo $value->fullname ?>" />
                                 <?php endif; ?>
-                                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                    <div class="overflow-hidden">
-                                    <h6 data-zanim-xs='{"delay":0}'><?php echo $value->fullname ?></h6>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                    <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->position ?></h6>
-                                    </div>
+                                    <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                        
+                                        <div class="">
+                                            <h6 data-zanim-xs='{"delay":0}'><?php echo $value->fullname ?></h6>
+                                        </div>
+
+                                        <div class=" ">
+                                            <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->personality ?></h6>
+                                        </div>
+
+                                        <div class="my-2 border-top border-bottom">
+                                            <h6 class="fw-normal text-500" data-zanim-xs='{"delay":0.1}'><?php echo $value->position ?></h6>
+                                        </div>
+
+                                        <div class="">
+                                            <a href="<?php echo url_for_root('team/profile?id='. $value->id) ?>" class="btn btn-sm btn-primary">Read more</a>
+                                        </div>
                                     
+                                        
+                                        
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                        <?php endforeach; ?>
                       </div>

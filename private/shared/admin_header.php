@@ -10,13 +10,17 @@
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="<?php echo url_for('assets/images/fav.png') ?>">
-
-
         <!-- App css -->
         <link href="<?php echo url_for('assets/css/icons.min.css') ?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo url_for('assets/css/app-creative.min.css') ?>" rel="stylesheet" type="text/css" id="light-style" />
         <link href="<?php echo url_for('assets/css/app-creative-dark.min.css') ?>" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?php echo url_for('assets/css/style.css') ?>" rel="stylesheet" type="text/css" />
+        
+        
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">
 
+        <script src="<?php echo url_for('assets/js/jquery.min.js') ?>"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
     </head>
     <style type="text/css">
         .analytic .active{
@@ -284,12 +288,12 @@
 
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="uil-apps me-1"></i>Blog <div class="arrow-down"></div>
+                                                <i class="uil-apps me-1"></i>Exploration <div class="arrow-down"></div>
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="topnav-apps">
-                                                <a href="<?php echo url_for('public/blog_post/') ?>" class="dropdown-item">List Post</a>
-                                                <a href="<?php echo url_for('public/blog_post/create.php') ?>" class="dropdown-item">Create New Post</a>
-                                                <a href="<?php echo url_for('public/blog_post/category/') ?>" class="dropdown-item">List Category</a>
+                                                <a href="<?php echo url_for('public/explore/') ?>" class="dropdown-item">List Post</a>
+                                                <a href="<?php echo url_for('public/explore/create.php') ?>" class="dropdown-item">Create New Post</a>
+                                                <a href="<?php echo url_for('public/explore/category/') ?>" class="dropdown-item">List Category</a>
                                                 
                                             </div>
                                         </li>

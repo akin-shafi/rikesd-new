@@ -1521,9 +1521,9 @@ textarea.fr-code {
 .fr-box.fr-code-view .CodeMirror {
   display: block; }
 
-.fr-box.fr-inline.fr-code-view .fr-command.fr-btn-switch {
+.fr-box.fr-inline.fr-code-view .fr-command.fr-btn.html-switch {
   display: block; }
-.fr-box.fr-inline .fr-command.fr-btn-switch {
+.fr-box.fr-inline .fr-command.fr-btn.html-switch {
   display: none;
   position: absolute;
   top: 0;
@@ -1559,11 +1559,11 @@ textarea.fr-code {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-  .fr-box.fr-inline .fr-command.fr-btn-switch i {
+  .fr-box.fr-inline .fr-command.fr-btn.html-switch i {
     font-size: 24px;
     width: 24px;
     text-align: center; }
-  .fr-box.fr-inline .fr-command.fr-btn-switch.fr-desktop:hover {
+  .fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {
     background: #ebebeb; }
 
 .fr-clearfix::after {

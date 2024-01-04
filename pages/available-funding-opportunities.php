@@ -1,18 +1,11 @@
 <?php require_once('../private/initialize.php'); 
-$page_title = "Available Funding Opportunities";
+$page_title = "Research Funding";
 
 ?>
 <?php include(SHARED_PATH . '/main-header.php'); ?>
 <?php include(SHARED_PATH . '/page-banner.php'); ?>
 <style>
-  .active{
-    background-color: #fdd428  !important;
-    /* border: 1px solid green  !important; */
-    color: #000  !important;
-  }
-  .fab-nav .nav-link{
-    text-transform: uppercase;
-  }
+ 
 </style>
 
 

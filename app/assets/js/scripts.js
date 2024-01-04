@@ -239,7 +239,7 @@ jQuery(function ($) {
   //countdown one
 
   $('#clock').countdown('2022/01/30', function(event) {
-    $(this)(event.strftime('' +
+    $(this).html(event.strftime('' +
       '<div class="row">' +
       '<div class="col">' +
       '<h2 class="mb-1">%-D</h2>' +
@@ -318,7 +318,7 @@ jQuery(function ($) {
         success: function (data) {
             if (data.success == true) {
                  // successTime(data.msg);
-                 confirmAlert('Awesome', 'Thank you for joining our community. We will keep you up to date on everything RikeSD');
+                 confirmAlert('Awesome', 'Thank you for joining our community. We will keep you up to date on everything ToNote');
             }else{
                 errorAlert("Success email not sent")
             }
@@ -350,7 +350,7 @@ jQuery(function ($) {
                         subscriptionMail(usermail)
                     }else{
                         $(".mce-error").removeClass("d-none");
-                        $("#mce-error-response")(data.msg);
+                        $("#mce-error-response").html(data.msg);
                     }
                    // 
                 }
@@ -399,7 +399,7 @@ jQuery(function ($) {
                 }else{
                     // submitMSG(false, '.contact-us');
                     // errorAlert(data.msg);
-                    $(".contact-error")(data.msg)
+                    $(".contact-error").html(data.msg)
                 }
                // 
             }

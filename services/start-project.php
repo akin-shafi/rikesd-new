@@ -1,5 +1,5 @@
 <?php require_once('../private/initialize.php'); 
-$page_title = 'Start Project';
+$page_title = 'Start a project';
 ?>
 <?php include(SHARED_PATH . '/main-header.php'); ?>
 
@@ -22,6 +22,7 @@ $page_title = 'Start Project';
                             <h5>What is your need ?</h5>
                             <div class="mb-3">
                             <label for="need">I am look for :</label>
+                            
                             <select class="form-control select2" id="need" name="need" required>
                                 <option value="">Select</option>
                                 <?php foreach(ResearchNeed::find_by_undeleted(['order' => 'ASC']) as $value): ?>
@@ -111,7 +112,13 @@ $page_title = 'Start Project';
                             </div>
                             <div class="mb-3">
                             <label for="country">Country of Residence:</label>
-                                <input type="text" class="form-control" id="country" name="country" required>
+                                <!-- <input type="text" class="form-control" id="country" name="country" required> -->
+                                <select class="form-control select2" id="country" name="country" required>
+                                    <option value=""></option>
+                                    <?php foreach (Countries::find_all() as $key => $value) {?>
+                                        <option value="<?php echo $value->id ?>"><?php echo $value->name ?></option>
+                                    <?php } ?>
+                                </select>
                                 <div class="invalid-feedback">Please enter your country of residence.</div>
                             </div>
                             <div class="mb-3">
