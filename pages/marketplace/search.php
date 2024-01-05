@@ -6,8 +6,8 @@
         </div>
 
 
-        <form class="row d-flex justify-content-center">
-            <div class="col-7 ">
+        <form class="">
+            <div class="w-75 mx-auto ">
                 <div class="row">
                     <div class="col-lg-8 col-12 mb-2">
                         <input id="topic-search" class="form-control" type="search" placeholder="Enter text..."
