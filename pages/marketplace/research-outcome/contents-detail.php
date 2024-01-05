@@ -63,28 +63,30 @@ $page_title = "Research Outcome";
                     <h4>
                         <i class="fas fa-cube me-2"></i> Overview Project Details
                     </h4>
-                    <h5>Description</h5>
-                    <p>This project will create a research partnership between the Centre for Death and Society and the Institute for Cemetery and Crematorium Management, who together will generate and deliver evidence that will inform the Law Commission's once-in-a-generation review of critical public health legislation related to the care and disposal of the deceased.</p>
-                    <p>Designed in collaboration with the Law Commission to maximise the relevance for the Commission's work, the project will conduct research on this critical public health infrastructure, which is under review as a result of growing concerns about its long term sustainability given rising fossil fuel costs, declining land availability, and the growth of new (unregulated) disposal technologies such as alkaline hydrolysis.</p>
-                    <h5>Layman's description</h5>
-                    <p>This project will create a research partnership between the Centre for Death and Society and the Institute for Cemetery and Crematorium Management, who together will generate and deliver evidence that will inform the Law Commission's once-in-a-generation review of critical public health legislation related to the care and disposal of the deceased.</p>
-                    <p>Designed in collaboration with the Law Commission to maximise the relevance for the Commission's work, the project will conduct research on this critical public health infrastructure, which is under review as a result of growing concerns about its long term sustainability given rising fossil fuel costs, declining land availability, and the growth of new (unregulated) disposal technologies such as alkaline hydrolysis.</p>
+                    <h5>Abstract</h5>
+                    <p>Conditional extreme value theory (EVT) methods promise enhanced forecasting of the extreme tail events that often dominate systemic risk. We present an improved two-tailed peaks-over-threshold (2T-POT) Hawkes model that is adapted for conditional quantile forecasting in both the left and right tails of a univariate time series. This is applied to the daily log-returns of six large cap indices. We also take the unique step of fitting the model at multiple exceedance thresholds (from the 1.25% to 25.00% mirrored quantiles). Quantitatively similar asymmetries in Hawkes parameters are found across all six indices, adding further empirical support to a temporal leverage effect in financial price time series in which the impact of losses is not only larger but also more immediate. Out-of-sample backtests find that our 2T-POT Hawkes model is more reliably accurate than the GARCH-EVT model when forecasting (mirrored) value-at-risk and expected shortfall at the 5% coverage level and below. This suggests that asymmetric Hawkes-type arrival dynamics are a better approximation of the true data generating process for extreme daily log-returns than GARCH-type conditional volatility; our 2T-POT Hawkes model therefore presents a better performing alternative for financial risk modelling.</p>
 
-                    <p><span class="d-inline-block" style="width: 180px;">Short title</span> £13586.60</p>
-                    <p><span class="d-inline-block" style="width: 180px;">Status</span> Active</p>
-                    <p><span class="d-inline-block" style="width: 180px;">Effective start/end date</span> 3/01/24 → 31/07/24</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Original language</span> English</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Pages (from-to)</span> 324-347</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Number of pages</span> 24</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Journal</span> International Journal of Forecasting</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Volume</span> 40</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Issue number</span> 1</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Early online date</span> 28 Apr 2023</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Publication status</span> Published - 1 Jan 2024</p>
 
-                    <h5>Collaborative partners</h5>
-                    <ul>
-                        <li>University of Bath (lead)</li>
-                        <li>Institute of Cemetery and Crematorium Management</li>
-                        <li>Law Commission</li>
-                    </ul>
-                    <h5>UN Sustainable Development Goals</h5>
-                    <p>In 2015, UN member states agreed to 17 global Sustainable Development Goals (SDGs) to end poverty, protect the planet and ensure prosperity for all. This project contributes towards the following SDG(s):</p>
+                    <div class="mb-3">
+                        <h5>Keywords</h5>
+                        <span class="d-inline-block border p-1 mb-1">Hawkes process</span> <span class="d-inline-block border p-1 mb-1">GARCH-EVT</span>
+                        <span class="d-inline-block border p-1 mb-1">Conditional extreme value theory</span> <span class="d-inline-block border p-1 mb-1">Value at Risk</span>
+                        <span class="d-inline-block border p-1 mb-1">Expected Shortfall</span> <span class="d-inline-block border p-1 mb-1">Leverage effect</span>
+                    </div>
 
-                    <h5>RCUK Research Areas</h5>
-                    <span class="border p-1">Sociology</span> <span class="border p-1">Social policy</span>
+                    <div class="mb-3">
+                        <h5>ASJC Scopus subject areas</h5>
+                        <span class="d-inline-block border p-1 mb-1">Statistical and Nonlinear Physics</span> <span class="d-inline-block border p-1 mb-1">Finance</span>
+                        <span class="d-inline-block border p-1 mb-1">Business and International Management</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,22 +96,22 @@ $page_title = "Research Outcome";
                     <h4>
                         <i class="fas fa-fingerprint"></i> Fingerprint
                     </h4>
-                    <p>Explore the research topics touched on by this project. These labels are generated based on the underlying awards/grants. Together they form a unique fingerprint.</p>
+                    <p>Dive into the research topics of '2T-POT Hawkes model for left- and right-tail conditional quantile forecasts of financial log-returns: out-of-sample comparison of conditional EVT models'. Together they form a unique fingerprint.</p>
                     Sort by | <a href="#!">Weight</a> | <a href="#!">Alphabetically</a>
 
-                    <h5 class="fw-normal my-3">Earth & Environmental Sciences</h5>
+                    <h5 class="fw-normal my-3">Mathematics</h5>
 
-                    <span class="border p-1 me-1">Public Health</span>
-                    <span class="border p-1 me-1">Health Legislation</span>
-                    <span class="border p-1 me-1">Cemetery</span>
-                    <span class="border p-1 me-1">Infrastructure</span>
-                    <span class="border p-1 me-1">Project</span>
-                    <span class="border p-1 me-1">Hydrolysis</span>
-                    <span class="border p-1 me-1">Fossil Fuel</span>
-                    <span class="border p-1 me-1">Sustainability</span>
-                    <span class="border p-1 me-1">Land</span>
-                    <span class="border p-1 me-1">Cost</span>
-                    <span class="border p-1 me-1">Policy</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Public Health</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Health Legislation</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Cemetery</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Infrastructure</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Project</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Hydrolysis</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Fossil Fuel</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Sustainability</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Land</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Cost</span>
+                    <span class="d-inline-block border p-1 mb-1 me-1">Policy</span>
                 </div>
             </div>
         </div>
