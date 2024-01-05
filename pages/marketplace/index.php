@@ -110,7 +110,7 @@ $items = [
 
 <section class="pt-2">
   <div class="container pb-5">
-    <div class="">
+    <div class="my-5">
       <h5>Explore R.I.K.E MarketPlace's Research Ecosystem</h5>
       <p>The R.I.K.E Research Marketplace is a platform designed to showcase and promote groundbreaking
         research initiatives. By bridging the gap between research and market accessibility, this marketplace aims to
