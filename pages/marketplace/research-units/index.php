@@ -7,7 +7,7 @@ $page = "Market Place";
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
 <?php include('../search.php') ?>
 
-<div class="container mt-5">
+<div class="container my-5">
     <h3 class="text-center mb-4">Our Onboard Research Institutes</h3>
 
     <ul class="list-group text-uppercase">
