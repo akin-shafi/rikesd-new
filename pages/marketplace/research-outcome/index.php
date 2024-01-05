@@ -7,13 +7,35 @@ $services = Services::find_by_id($activeTab) ?? 1;
 
 ?>
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
-<link href="<?php //echo url_for_root('assets/css/application.css ') ?>" rel="stylesheet" />
+<link href="<?php //echo url_for_root('assets/css/application.css ') 
+            ?>" rel="stylesheet" />
 
 <?php include('../search.php') ?>
 
-<div class="container" style="min-height: 1651.33px;">
-  <?php include('aside-left.php') ?>
-</div>
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="mb-3">
+          <a class="search-all-content text-secondary" style="font-size: 14px;" href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Search in all content
+          </a>
+        </div>
+
+        <?php include('aside-left.php') ?>
+      </div>
+      <div class="col-12 col-md-9">
+        <p class="mb-3">
+          <span class="border-end text-secondary px-2">1 - 50 out of 5,172 results</span>
+          <a href="#!" class="fw-normal text-secondary border-end px-2">Status, start date (descending)</a>
+          <a href="#!" class="fw-normal text-secondary px-2">Export search results</a>
+        </p>
+
+        <?php include('contents.php') ?>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -29,7 +51,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
 <?php include(SHARED_PATH . '/main-footer.php'); ?>
 
 <script>
-  document.getElementById('advanced-search-form').addEventListener('submit', function (event) {
+  document.getElementById('advanced-search-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Retrieve the search criteria from the form
@@ -44,5 +66,4 @@ $services = Services::find_by_id($activeTab) ?? 1;
     console.log('Area of Interest:', areaOfInterest);
     console.log('Country:', country);
   });
-
 </script>

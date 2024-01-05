@@ -45,7 +45,7 @@ $items = [
     'icon' => 'fa-search',
   ],
 ]
-  ?>
+?>
 
 <section class="container-fluid" id="advanced-search-form">
   <div class="w-100 search-panel py-5">
@@ -59,11 +59,10 @@ $items = [
       <div class="col-7 ">
         <div class="row">
           <div class="col-lg-8 col-12 mb-2">
-            <input id="topic-search" class="form-control" type="search" placeholder="Search by Topic"
-              aria-label="Search by Topic">
+            <input id="topic-search" class="form-control" type="search" placeholder="Search by Topic" aria-label="Search by Topic">
           </div>
           <div class="col-lg-4 col-12 mb-2">
-            <button class="btn btn-success btn-sm w-100" type="submit">Search</button>
+            <button class="btn btn-success btn w-100" type="submit">Search</button>
           </div>
         </div>
       </div>
@@ -75,9 +74,8 @@ $items = [
 
 <section class="section py-4 bg-100 container-fluid  border-bottom">
   <div class="row d-flex justify-content-center">
-    <?php foreach ($items as $key => $value): ?>
-      <a href="<?php echo url_for_root('/pages/marketplace/') . str_replace(' ', '-', strtolower($value['item'])); ?>"
-        class="col-md-6 col-xl-2">
+    <?php foreach ($items as $key => $value) : ?>
+      <a href="<?php echo url_for_root('/pages/marketplace/') . str_replace(' ', '-', strtolower($value['item'])); ?>" class="col-md-6 col-xl-2">
         <div class="card my-1">
           <div class="card-body p-1">
             <div class="row align-items-center ">
@@ -136,7 +134,7 @@ $items = [
 <?php include(SHARED_PATH . '/main-footer.php'); ?>
 
 <script>
-  document.getElementById('advanced-search-form').addEventListener('submit', function (event) {
+  document.getElementById('advanced-search-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Retrieve the search criteria from the form
@@ -151,5 +149,4 @@ $items = [
     console.log('Area of Interest:', areaOfInterest);
     console.log('Country:', country);
   });
-
 </script>
