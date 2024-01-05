@@ -17,14 +17,10 @@
                 <span rel="Person" class="link person">1 Jan 2024, In: International Journal of Forecasting. 40, 1, p. 324-347 24 p.</span>
             </h6>
 
-            <small class="card-text mb-0">
-                <span class="date">3/01/24</span> → <span class="date">31/07/24</span>
-            </small>
-
             <p class="card-text">
                 <small class="d-block">
                     <i>
-                        <span class="type_family">Research output:<span class="type_family_sep">: </span>
+                        <span class="type_family">Research output<span class="type_family_sep">: </span>
                         </span><span class="type_classification">Contribution to journal > Article > peer-review</span>
                     </i>
                 </small>
