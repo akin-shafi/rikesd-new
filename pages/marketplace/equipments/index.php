@@ -133,12 +133,13 @@ $items = [
                         <div class="result-container">
                             <div class="rendering">
                                 <div class="title">
-                                    <a rel="Equipment" href="#" class="link"><span>
+                                    <a rel="Equipment"
+                                        href="<?php echo url_for_root('pages/marketplace/equipments/equipment-detail.php?dt='); ?>"
+                                        class="link"><span>
                                             <?php echo $value['item'] ?>
                                         </span></a>
                                 </div>
-                                <p class="equipment-person"></p><a rel="Organisation"
-                                    href="https://researchportal.bath.ac.uk/en/organisations/department-of-architecture-civil-engineering"
+                                <p class="equipment-person"></p><a rel="Organisation" href="#"
                                     class="link organisation"><span>
                                         <?php echo $value['department'] ?>
                                     </span></a>

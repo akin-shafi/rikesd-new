@@ -21,6 +21,7 @@
 
         </form>
     </div>
-    <div class="text-center text-danger h5 mt-2">Note: information on this page are just for presentation purpose
+    <div class="text-center text-danger h5 my-4">Note: The content presented on this page is intended solely for the
+        purpose of presentation.
     </div>
 </section>

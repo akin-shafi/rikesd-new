@@ -75,7 +75,8 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
     }
 
     .nav-item>.active {
-        color: green;
+        color: #000;
+        background-color: #f0cb00;
         border-bottom: 2px solid green !important
     }
 
@@ -274,7 +275,7 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                     <li class="nav-item">
                                         <a class="nav-link <?php echo $page_title == 'Research Units' ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/research-units/') ?>">Research
-                                            Units
+                                            Institutes
                                         </a>
                                     </li>
                                 </ul>

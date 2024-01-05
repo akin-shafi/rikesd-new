@@ -40,7 +40,7 @@ $items = [
     'icon' => 'fa-cog',
   ],
   7 => [
-    'item' => 'Research Units',
+    'item' => 'Research Institutes',
     'count' => 1,
     'icon' => 'fa-search',
   ],
