@@ -50,7 +50,7 @@ $items = [
         font-style: italic;
     }
 </style>
-<div class="container-fluid ">
+<div class="container ">
     <div class="row ">
         <div class="col-12 col-md-3">
             <h6>Filters for
@@ -115,10 +115,6 @@ $items = [
                     </div>
 
                 </div>
-
-
-
-
 
 
                 <!-- <label role="button" class="toggleButton d-inline-block my-2" data-target="content1">
