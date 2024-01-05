@@ -7,158 +7,55 @@ $services = Services::find_by_id($activeTab) ?? 1;
 
 ?>
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
-<link href="<?php //echo url_for_root('assets/css/application.css ') ?>" rel="stylesheet" />
+<link href="<?php //echo url_for_root('assets/css/application.css ') 
+?>" rel="stylesheet" />
 
 <?php include('../search.php') ?>
 
-<section class="section">
+<section class="py-5">
   <div class="container">
     <div class="row">
-      <?php include('../filter.php') ?>
-      <div class="col-12 col-md-9">
-        <h6>Active</h6>
-
-        <hr />
-
-        <div class="result-container mb-5">
-          <div class="card">
-            <h5 class="card-title">
-              <a rel="UPMProject"
-                href="<?php echo url_for_root('pages/marketplace/projects/start-project-detail.php?dt=The_future_of_critical_public_health'); ?>"
-                class="link">
-                UKRI Policy Support Fund: The future of critical public health death care infrastructure
-                in England and Wales
-              </a>
-            </h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              <a rel="Person" href="#!" class="link person">Woodthorpe, K.</a>,
-              <a rel="Person" href="#!" class="link person">Teggi, D.</a> &amp;
-              <a rel="Person" href="#!" class="link person">Crawley, M.</a>
-            </h6>
-            <div class="open-access">
-              <i class="fa fa-lock-open text-danger"></i>
-              Open Access
-            </div>
-            <small class="card-text mb-0">
-              <span class="date">3/01/24</span> → <span class="date">31/07/24</span>
-            </small>
-
-            <p class="card-text">
-              <small class="d-block mb-2">
-                <i>
-                  <span class="type_family">
-                    <?= $page_title ?><span class="type_family_sep">: </span>
-                  </span><span class="type_classification">Research-related funding</span>
-                </i>
-              </small>
-            </p>
-          </div>
-
-          <ul class="nav d-none">
-            <li class="nav-item me-1">
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  public health
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="ph">
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>15
-                      Profiles</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>25
-                      Research output</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>10
-                      Projects</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-circle me-2"></i>17
-                      Equipment</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-home me-2"></i>1 Research
-                      unit</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item me-1">
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  health legislation
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="ph">
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>1 Projects</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item me-1">
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  cemetery
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="ph">
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>1 Projects</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item me-1">
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  infrastructure
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="ph">
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>5 Profiles</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>16
-                      Research output</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>3 Projects</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-home me-2"></i>1 Research
-                      unit</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item me-1">
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  project
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="ph">
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>2 Profiles</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>20
-                      Research output</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>13
-                      Projects</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-home me-2"></i>1 Research
-                      unit</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+      <div class="col-12 col-md-3">
+        <div class="mb-3">
+          <a class="search-all-content text-secondary" style="font-size: 14px;"
+            href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Search in all content
+          </a>
         </div>
 
+        <?php include('aside-left.php') ?>
+      </div>
+      <div class="col-12 col-md-9">
+        <p class="mb-3">
+          <span class="border-end text-secondary px-2">1 - 50 out of 5,172 results</span>
+          <a href="#!" class="fw-normal text-secondary border-end px-2">Status, start date (descending)</a>
+          <a href="#!" class="fw-normal text-secondary px-2">Export search results</a>
+        </p>
 
-
-
-        <nav aria-label="Result navigation">
-          <ul class="pagination pagination-sm justify-content-center">
-            <li class="page-item disabled">
-              <span class="page-link">Previous</span>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+        <?php include('contents.php') ?>
       </div>
     </div>
   </div>
+</section>
+
+
+
+
+
+<nav aria-label="Result navigation">
+  <ul class="pagination pagination-sm justify-content-center">
+    <li class="page-item disabled">
+      <span class="page-link">Previous</span>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
 </section>
 
 
@@ -185,5 +82,4 @@ $services = Services::find_by_id($activeTab) ?? 1;
     console.log('Area of Interest:', areaOfInterest);
     console.log('Country:', country);
   });
-
 </script>
