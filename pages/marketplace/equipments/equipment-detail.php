@@ -96,7 +96,14 @@ $page_title = 'Student Theses';
                         <h4>Equipment taxonomy</h4>
                         <div class="btn btn-outline-secondary">Evaporator</div>
 
-
+                        <hr>
+                        <div>
+                            <h4>
+                                Images
+                            </h4>
+                            <img src="<?php echo url_for_root('/assets/upload/equipment-facilities/3d-printer.jpeg') ?>"
+                                alt="" srcset="" class="img-fluid">
+                        </div>
 
                     </div>
 

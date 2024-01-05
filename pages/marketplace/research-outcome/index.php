@@ -27,7 +27,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
       </div>
       <div class="col-12 col-md-9">
         <p class="mb-3">
-          <span class="border-end text-secondary px-2">1 - 50 out of 5,172 results</span>
+          <span class="border-end text-secondary px-2">1 - 50 out of 50 results</span>
           <a href="#!" class="fw-normal text-secondary border-end px-2">Status, start date (descending)</a>
           <a href="#!" class="fw-normal text-secondary px-2">Export search results</a>
         </p>
