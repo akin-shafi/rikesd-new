@@ -8,7 +8,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
 ?>
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
 <link href="<?php //echo url_for_root('assets/css/application.css ') 
-?>" rel="stylesheet" />
+            ?>" rel="stylesheet" />
 
 <?php include('../search.php') ?>
 
@@ -17,8 +17,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="mb-3">
-          <a class="search-all-content text-secondary" style="font-size: 14px;"
-            href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
+          <a class="search-all-content text-secondary" style="font-size: 14px;" href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
             <i class="fa fa-arrow-left" aria-hidden="true"></i> Search in all content
           </a>
         </div>
@@ -38,21 +37,6 @@ $services = Services::find_by_id($activeTab) ?? 1;
   </div>
 </section>
 
-
-
-
-
-<nav aria-label="Result navigation">
-  <ul class="pagination pagination-sm justify-content-center">
-    <li class="page-item disabled">
-      <span class="page-link">Previous</span>
-    </li>
-    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
 </div>
 </div>
 </div>
@@ -67,7 +51,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
 <?php include(SHARED_PATH . '/main-footer.php'); ?>
 
 <script>
-  document.getElementById('advanced-search-form').addEventListener('submit', function (event) {
+  document.getElementById('advanced-search-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Retrieve the search criteria from the form
