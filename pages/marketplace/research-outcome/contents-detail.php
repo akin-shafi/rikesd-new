@@ -1,19 +1,21 @@
 <?php require_once('../../../private/initialize.php');
-$page_title = 'Start Project Details';
+$page_title = "Research Outcome";
 ?>
 
-<?php include(SHARED_PATH . '/main-header.php'); ?>
+<?php include(SHARED_PATH . '/marketplace-header.php'); ?>
 
 <!-- <section> begin ============================-->
 <section class="section bg-light container-fluid">
     <div class="container">
         <div class="row">
             <div class="col-12" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <h4 class="mb-2">UKRI Policy Support Fund: The future of critical public health deathcare infrastructure in England and Wales</h4>
+                <h4 class="mb-2">2T-POT Hawkes model for left- and right-tail conditional quantile forecasts of financial log-returns: out-of-sample comparison of conditional EVT models</h4>
+
                 <p class="mb-2">
-                    <a rel="Person" href="#!" class="link text-info person">Woodthorpe, K.</a>,
-                    <a rel="Person" href="#!" class="link text-info person">Teggi, D.</a> &amp;
-                    <a rel="Person" href="#!" class="link text-info person">Crawley, M.</a>
+                    <a rel="Person" href="#!" class="link text-info person">Tomlinson, M. F.,</a>
+                    <span rel="Person" class="link person">Greenwood, D. & </span>
+                    <a rel="Person" href="#!" class="link text-info person">Mucha-Kruczynski, M.,</a> &amp;
+                    <span rel="Person" class="link person">1 Jan 2024, In: International Journal of Forecasting. 40, 1, p. 324-347 24 p.</span>
                 </p>
 
                 <p class="mb-2">Department of Social & Policy Sciences Centre for Death and SocietyInstitute for Policy Research (IPR) Centre for Qualitative Research</p>
@@ -68,7 +70,7 @@ $page_title = 'Start Project Details';
                     <p>This project will create a research partnership between the Centre for Death and Society and the Institute for Cemetery and Crematorium Management, who together will generate and deliver evidence that will inform the Law Commission's once-in-a-generation review of critical public health legislation related to the care and disposal of the deceased.</p>
                     <p>Designed in collaboration with the Law Commission to maximise the relevance for the Commission's work, the project will conduct research on this critical public health infrastructure, which is under review as a result of growing concerns about its long term sustainability given rising fossil fuel costs, declining land availability, and the growth of new (unregulated) disposal technologies such as alkaline hydrolysis.</p>
 
-                    <p><span class="d-inline-block" style="width: 180px;">Short</span> title £13586.60</p>
+                    <p><span class="d-inline-block" style="width: 180px;">Short title</span> £13586.60</p>
                     <p><span class="d-inline-block" style="width: 180px;">Status</span> Active</p>
                     <p><span class="d-inline-block" style="width: 180px;">Effective start/end date</span> 3/01/24 → 31/07/24</p>
 

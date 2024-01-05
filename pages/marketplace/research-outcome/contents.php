@@ -7,13 +7,14 @@
         <div class="card">
             <h5 class="card-title">
                 <a rel="UPMProject" href="<?php echo url_for_root('/pages/marketplace/research-outcome/contents-detail.php?dt=The_future_of_critical_public_health'); ?>" class="link">
-                    UKRI Policy Support Fund: The future of critical public health death care infrastructure in England and Wales
+                    2T-POT Hawkes model for left- and right-tail conditional quantile forecasts of financial log-returns: out-of-sample comparison of conditional EVT models
                 </a>
             </h5>
             <h6 class="card-subtitle mb-2 text-muted">
-                <a rel="Person" href="#!" class="link person">Woodthorpe, K.</a>,
-                <a rel="Person" href="#!" class="link person">Teggi, D.</a> &amp;
-                <a rel="Person" href="#!" class="link person">Crawley, M.</a>
+                <a rel="Person" href="#!" class="link text-info person">Tomlinson, M. F.,</a>
+                <span rel="Person" class="link person">Greenwood, D. & </span>
+                <a rel="Person" href="#!" class="link text-info person">Mucha-Kruczynski, M.,</a> &amp;
+                <span rel="Person" class="link person">1 Jan 2024, In: International Journal of Forecasting. 40, 1, p. 324-347 24 p.</span>
             </h6>
 
             <small class="card-text mb-0">
@@ -21,20 +22,22 @@
             </small>
 
             <p class="card-text">
-                <small class="d-block mb-2">
+                <small class="d-block">
                     <i>
-                        <span class="type_family">Project<span class="type_family_sep">: </span>
-                        </span><span class="type_classification">Research-related funding</span>
+                        <span class="type_family">Research output:<span class="type_family_sep">: </span>
+                        </span><span class="type_classification">Contribution to journal > Article > peer-review</span>
                     </i>
                 </small>
             </p>
+
+            <div class="mb-1" style="font-size: small;"><i class="fa fa-unlock text-danger" aria-hidden="true"></i> Open Access</div>
         </div>
 
         <ul class="nav">
             <li class="nav-item me-1">
                 <div class="dropdown">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
-                        public health
+                        Quantiles
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="ph">
                         <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>15 Profiles</a></li>
@@ -49,7 +52,7 @@
             <li class="nav-item me-1">
                 <div class="dropdown">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
-                        health legislation
+                        Extreme Value Theory
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="ph">
                         <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>1 Projects</a></li>
@@ -60,7 +63,7 @@
             <li class="nav-item me-1">
                 <div class="dropdown">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
-                        cemetery
+                        Forecast
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="ph">
                         <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>1 Projects</a></li>
@@ -71,7 +74,7 @@
             <li class="nav-item me-1">
                 <div class="dropdown">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
-                        infrastructure
+                        Forecasting
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="ph">
                         <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>5 Profiles</a></li>
@@ -102,30 +105,94 @@
         <div class="card">
             <h5 class="card-title">
                 <a rel="UPMProject" href="#!" class="link">
-                    Entrepreneur in Residence
+                    Accelerated testing of soft soldered, small-diameter, thin-walled CuNi pipes subjected to cyclic internal pressure loading
                 </a>
             </h5>
             <h6 class="card-subtitle mb-2 text-muted">
-                <a rel="Person" href="#!" class="link person">Eccleston, C.</a>,
+                <span rel="Person" class="link person">McNair, S. A. M., </span>
+                <span rel="Person" class="link person">Cichy, K., </span>
+                <span rel="Person" class="link person">Daguin, J., </span>
+                <span rel="Person" class="link person">Onnela, A. & </span>
+                <a rel="Person" href="#!" class="link text-info person">Lunt, A. J. G., </a> &amp;
+                <span rel="Person" class="link person">1 Jan 2024, In: Journal of Materials Research and Technology. 28, p. 512-521 10 p.</span>
             </h6>
-
-            <small class="card-text mb-0">
-                The Royal Society <br />
-                <span class="date">1/01/24</span> → <span class="date">31/12/25</span>
-            </small>
 
             <p class="card-text">
                 <small class="d-block mb-2">
                     <i>
-                        <span class="type_family">Project<span class="type_family_sep">: </span>
-                        </span><span class="type_classification">Research council</span>
+                        <span class="type_family">Research output<span class="type_family_sep">: </span>
+                        </span><span class="type_classification">Contribution to journal > Article > peer-review</span>
                     </i>
                 </small>
             </p>
+
+            <div class="mb-1" style="font-size: small;"><i class="fa fa-unlock text-danger" aria-hidden="true"></i> Open Access</div>
         </div>
 
-        <ul class="nav d-none">
-            <li class="nav-item">
+        <ul class="nav">
+            <li class="nav-item me-1">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
+                        Soldered Joints
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ph">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>1 Research output</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-home me-2"></i>1 Research unit</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item me-1">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
+                        Internal Pressure
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ph">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>1 Profiles</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>3 Research output</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-home me-2"></i>1 Research unit</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item me-1">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pipe
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ph">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>1 Profiles</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>3 Research output</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>5 Projects</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-circle me-2"></i>1 Equipment</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item me-1">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
+                        Porosity
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ph">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>1 Profiles</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>3 Research output</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cube me-2"></i>5 Projects</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-circle me-2"></i>1 Equipment</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-folder-open me-2"></i>3 Research units</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item me-1">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
+                        Testing
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ph">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <!-- <ul class="nav d-none">
+            <li class="nav-item me-1">
                 <div class="dropdown">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle text-capitalize" type="button" id="ph" data-bs-toggle="dropdown" aria-expanded="false">
                         Item-title
@@ -135,7 +202,7 @@
                     </ul>
                 </div>
             </li>
-        </ul>
+        </ul> -->
     </div>
 
 
