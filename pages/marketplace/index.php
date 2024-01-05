@@ -35,14 +35,19 @@ $items = [
     'icon' => 'fa-graduation-cap',
   ],
   6 => [
-    'item' => 'Equipment',
+    'item' => 'Equipments',
     'count' => 1,
     'icon' => 'fa-cog',
   ],
   7 => [
-    'item' => 'Research Institutes',
+    'item' => 'Research Units',
     'count' => 1,
     'icon' => 'fa-search',
+  ],
+  8 => [
+    'item' => 'Signup',
+    'count' => 1,
+    'icon' => 'fa-user',
   ],
 ]
   ?>
@@ -106,24 +111,17 @@ $items = [
 <section class="pt-2">
   <div class="container pb-5">
     <div class="">
-      <h5>Explore RikeSD MarketPlace's Research Ecosystem</h5>
-      <p>RikeSD MarketPlace is at the forefront of catalyzing impactful research that transforms industries and enhances
-        societal well-being. Through our comprehensive portal, you can delve into a wealth of information encompassing
-        all research endeavors within the RikeSD community, spanning from funding details to published journal articles.
+      <h5>Explore R.I.K.E MarketPlace's Research Ecosystem</h5>
+      <p>The R.I.K.E Research Marketplace is a platform designed to showcase and promote groundbreaking
+        research initiatives. By bridging the gap between research and market accessibility, this marketplace aims to
+        accelerate the commercialization of innovative ideas, ultimately contributing to societal and economic
+        advancement.
       </p>
-
-      <p>Utilize the search functionality above to navigate content tailored to your interests. Whether you prefer a
-        broad exploration or seek specific information on researchers, expertise areas, organizational units,
-        collaborations, projects, and outputs, our portal provides a seamless experience. Uncover the intricate
-        connections within our dynamic research landscape.</p>
-
-      <p>Are you eager to collaborate with us? RikeSD MarketPlace empowers organizations to innovate for a competitive
-        advantage. This may involve research collaborations, consultations, business incubation, or engagement with our
-        students and facilities. Leverage our research portal to identify experts pertinent to your needs or explore
-        further details on our business pages.</p>
-
-      <p>Embark on a journey of discovery and collaboration within the thriving research ecosystem of RikeSD
-        MarketPlace.</p>
+      <!-- Researchers, Investors/Uptakers Meeting Point -->
+      <p><a href="<?php echo url_for_root('/pages/marketplace/signup/') ?>">Signup</a> if you are
+        a researcher or research institute and willing to
+        commercialize you
+        research, equipment or facility</p>
 
     </div>
   </div>

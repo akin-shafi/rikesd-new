@@ -278,6 +278,13 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                             Institutes
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo $page_title == 'Signup/Login' ? 'active' : '' ?>"
+                                            href="<?php echo url_for_root('/pages/marketplace/signup/') ?>">Signup/Login
+                                            
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
