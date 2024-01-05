@@ -8,7 +8,7 @@ $page = "Market Place";
 <?php include('../search.php') ?>
 
 <div class="container mt-5">
-    <!-- <h1 class="text-center mb-4">Research Center</h1> -->
+    <h3 class="text-center mb-4">Our Onboard Research Institutes</h3>
 
     <ul class="list-group text-uppercase">
         <li class="list-group-item">VETERINARY COUNCIL OF NIGERIA, ABUJA</li>
