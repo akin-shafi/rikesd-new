@@ -9,26 +9,26 @@ $services = Services::find_by_id($activeTab) ?? 1;
 <?php include(SHARED_PATH . '/main-header.php'); ?>
 <?php
 $items = [
-  1 => [
-    'item' => 'Profiles',
-    'count' => 12,
-    'icon' => 'fa-user',
-  ],
+  // 1 => [
+  //   'item' => 'Profiles',
+  //   'count' => 12,
+  //   'icon' => 'fa-user',
+  // ],
   2 => [
     'item' => 'Research outcome',
-    'count' => 10,
+    'count' => 1,
     'icon' => 'fa-book-open',
   ],
-  3 => [
-    'item' => 'Projects',
-    'count' => 3,
-    'icon' => 'fa-box',
-  ],
-  4 => [
-    'item' => 'Datasets',
-    'count' => 190,
-    'icon' => 'fa-database',
-  ],
+  // 3 => [
+  //   'item' => 'Projects',
+  //   'count' => 3,
+  //   'icon' => 'fa-box',
+  // ],
+  // 4 => [
+  //   'item' => 'Datasets',
+  //   'count' => 190,
+  //   'icon' => 'fa-database',
+  // ],
   5 => [
     'item' => 'Student theses',
     'count' => 1,
@@ -36,12 +36,12 @@ $items = [
   ],
   6 => [
     'item' => 'Equipment',
-    'count' => 2345,
+    'count' => 1,
     'icon' => 'fa-cog',
   ],
   7 => [
     'item' => 'Research Units',
-    'count' => 34,
+    'count' => 1,
     'icon' => 'fa-search',
   ],
 ]

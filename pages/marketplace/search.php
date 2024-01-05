@@ -21,4 +21,6 @@
 
         </form>
     </div>
+    <div class="text-center text-danger h5 mt-2">Note: information on this page are just for presentation purpose
+    </div>
 </section>

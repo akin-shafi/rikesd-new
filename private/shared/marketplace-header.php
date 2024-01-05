@@ -238,7 +238,7 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                             href="<?php echo url_for_root('/pages/marketplace/') ?>">Home
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item d-none">
                                         <a class="nav-link <?php echo $page_title == "Profiles" ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/profile/') ?>">Profiles
                                         </a>
@@ -250,18 +250,18 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                         </a>
                                     </li>
 
-                                    <li class="nav-item">
+                                    <li class="nav-item d-none">
                                         <a class="nav-link <?php echo $page_title == "Projects" ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/projects/') ?>">Projects
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item d-none">
                                         <a class="nav-link <?php echo $page_title == "Dataset" ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/dataset/') ?>">Dataset
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link <?php echo $page_title == 'Student theses' ? 'active' : '' ?>"
+                                        <a class="nav-link <?php echo $page_title == 'Student Theses' ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/student-theses/') ?>">Student
                                             theses
                                         </a>
@@ -307,3 +307,5 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                 </div>
             </div>
         </div>
+
+        <div style="margin-bottom:60px"></div>
