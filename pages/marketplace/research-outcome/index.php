@@ -1,5 +1,5 @@
 <?php require_once('../../../private/initialize.php');
-$page_title = "Research Outcome";
+$page_title = "Discovery";
 $projects = Product::find_by_undeleted(['order' => 'ASC']);
 
 $activeTab = isset($_GET['tab']) ? $_GET['tab'] : 0;
@@ -8,7 +8,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
 ?>
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
 <link href="<?php //echo url_for_root('assets/css/application.css ') 
-            ?>" rel="stylesheet" />
+?>" rel="stylesheet" />
 
 <?php include('../search.php') ?>
 
@@ -17,7 +17,8 @@ $services = Services::find_by_id($activeTab) ?? 1;
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="mb-3">
-          <a class="search-all-content text-secondary" style="font-size: 14px;" href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
+          <a class="search-all-content text-secondary" style="font-size: 14px;"
+            href="<?php echo url_for_root('/pages/marketplace/?search='); ?>">
             <i class="fa fa-arrow-left" aria-hidden="true"></i> Search in all content
           </a>
         </div>
@@ -51,7 +52,7 @@ $services = Services::find_by_id($activeTab) ?? 1;
 <?php include(SHARED_PATH . '/main-footer.php'); ?>
 
 <script>
-  document.getElementById('advanced-search-form').addEventListener('submit', function(event) {
+  document.getElementById('advanced-search-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Retrieve the search criteria from the form

@@ -26,12 +26,57 @@ $page_title = 'Student Theses';
                     Nigeria
                 </div>
 
+                <div>
+                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#declarationModal">
+                        Lease/Rent Now at $
+                        <?php echo number_format(500, 2) ?>
+                    </button>
+                </div>
+
 
             </div>
         </div>
     </div>
 </section>
 
+
+<!-- Declaration of Interest Modal -->
+<div class="modal fade" id="declarationModal" tabindex="-1" aria-labelledby="declarationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="declarationModalLabel">Declaration of Interest</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Your declaration of interest form goes here -->
+                <form>
+                    <!-- Example form fields -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                    </div>
+                    <!-- Add more form fields as needed -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Additional Message (if any):</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <!-- Add your form submission logic here -->
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
 <style>
     .bg-custom {
         background: #f2f2f2;

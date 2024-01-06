@@ -15,7 +15,8 @@ $items = [
   //   'icon' => 'fa-user',
   // ],
   2 => [
-    'item' => 'Research outcome',
+    'item' => 'Discovery',
+    'link' => 'Research outcome',
     'count' => 1,
     'icon' => 'fa-book-open',
   ],
@@ -30,22 +31,26 @@ $items = [
   //   'icon' => 'fa-database',
   // ],
   5 => [
-    'item' => 'Student theses',
+    'item' => 'Publications',
+    'link' => 'Student theses',
     'count' => 1,
     'icon' => 'fa-graduation-cap',
   ],
   6 => [
     'item' => 'Equipments',
+    'link' => 'Equipments',
     'count' => 1,
     'icon' => 'fa-cog',
   ],
   7 => [
     'item' => 'Research Units',
+    'link' => 'Research Units',
     'count' => 1,
     'icon' => 'fa-search',
   ],
   8 => [
-    'item' => 'Signup',
+    'item' => 'Signup/Login',
+    'link' => 'Signup',
     'count' => 1,
     'icon' => 'fa-user',
   ],
@@ -81,7 +86,7 @@ $items = [
 <section class="section py-4 bg-100 container-fluid  border-bottom">
   <div class="row d-flex justify-content-center">
     <?php foreach ($items as $key => $value): ?>
-      <a href="<?php echo url_for_root('/pages/marketplace/') . str_replace(' ', '-', strtolower($value['item'])); ?>"
+      <a href="<?php echo url_for_root('/pages/marketplace/') . str_replace(' ', '-', strtolower($value['link'])); ?>"
         class="col-md-6 col-xl-2">
         <div class="card my-1">
           <div class="card-body p-1">
@@ -111,17 +116,17 @@ $items = [
 <section class="pt-2">
   <div class="container pb-5">
     <div class="">
-      <h5>Explore R.I.K.E MarketPlace's Research Ecosystem</h5>
-      <p>The R.I.K.E Research Marketplace is a platform designed to showcase and promote groundbreaking
+      <h5>Explore R.I.K.E MarketPlace's Ecosystem</h5>
+      <p>The R.I.K.E Marketplace is a platform designed to showcase and promote groundbreaking
         research initiatives. By bridging the gap between research and market accessibility, this marketplace aims to
         accelerate the commercialization of innovative ideas, ultimately contributing to societal and economic
         advancement.
       </p>
       <!-- Researchers, Investors/Uptakers Meeting Point -->
       <p><a href="<?php echo url_for_root('/pages/marketplace/signup/') ?>">Signup</a> if you are
-        a researcher or research institute and willing to
-        commercialize you
-        research, equipment or facility</p>
+        a researcher, innovator or education/research institute willing to
+        commercialize your
+        research outcome, innovation equipments or facility.</p>
 
     </div>
   </div>

@@ -245,9 +245,8 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link <?php echo $page_title == "Research Outcome" ? 'active' : '' ?>"
-                                            href="<?php echo url_for_root('/pages/marketplace/research-outcome/') ?>">Research
-                                            Outcome
+                                        <a class="nav-link <?php echo $page_title == "Discovery" ? 'active' : '' ?>"
+                                            href="<?php echo url_for_root('/pages/marketplace/research-outcome/') ?>">Discovery
                                         </a>
                                     </li>
 
@@ -262,9 +261,8 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link <?php echo $page_title == 'Student Theses' ? 'active' : '' ?>"
-                                            href="<?php echo url_for_root('/pages/marketplace/student-theses/') ?>">Student
-                                            theses
+                                        <a class="nav-link <?php echo $page_title == 'Publications' ? 'active' : '' ?>"
+                                            href="<?php echo url_for_root('/pages/marketplace/student-theses/') ?>">Publications
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -281,7 +279,7 @@ $categories = TeamCategory::find_by_undeleted(['order' => 'ASC']);
                                     <li class="nav-item">
                                         <a class="nav-link <?php echo $page_title == 'Signup/Login' ? 'active' : '' ?>"
                                             href="<?php echo url_for_root('/pages/marketplace/signup/') ?>">Signup/Login
-                                            
+
                                         </a>
                                     </li>
 
