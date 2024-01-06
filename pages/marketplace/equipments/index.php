@@ -24,7 +24,7 @@ $items = [
         'type' => 'Facility',
     ],
 ]
-    ?>
+?>
 <?php include(SHARED_PATH . '/marketplace-header.php'); ?>
 <?php include('../search.php') ?>
 <style>
@@ -129,14 +129,11 @@ $items = [
                         <div class="result-container">
                             <div class="rendering">
                                 <div class="title">
-                                    <a rel="Equipment"
-                                        href="<?php echo url_for_root('pages/marketplace/equipments/equipment-detail.php?dt='); ?>"
-                                        class="link"><span>
+                                    <a rel="Equipment" href="<?php echo url_for_root('pages/marketplace/equipments/equipment-detail.php?dt='); ?>" class="link"><span>
                                             <?php echo $value['item'] ?>
                                         </span></a>
                                 </div>
-                                <p class="equipment-person"></p><a rel="Organisation" href="#"
-                                    class="link organisation"><span>
+                                <p class="equipment-person"></p><a rel="Organisation" href="#" class="link organisation"><span>
                                         <?php echo $value['department'] ?>
                                     </span></a>
                                 <p class="type"><span class="type_family">Facility/equipment<span class="type_family_sep">:

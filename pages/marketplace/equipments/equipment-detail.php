@@ -94,9 +94,7 @@ $page_title = 'Student Theses';
     <div class="container">
         <ul class="nav" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <div class="nav-link btn me-2 is-tab active" id="pills-overview-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview"
-                    aria-selected="true">
+                <div class="nav-link btn me-2 is-tab active" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview" aria-selected="true">
                     <i class="fas fa-cube me-2"></i> Overview
                 </div>
             </li>
@@ -146,8 +144,7 @@ $page_title = 'Student Theses';
                             <h4>
                                 Images
                             </h4>
-                            <img src="<?php echo url_for_root('/assets/upload/equipment-facilities/3d-printer.jpeg') ?>"
-                                alt="" srcset="" class="img-fluid">
+                            <img src="<?php echo url_for_root('/assets/upload/equipment-facilities/3d-printer.jpeg') ?>" alt="" srcset="" class="img-fluid">
                         </div>
 
                     </div>

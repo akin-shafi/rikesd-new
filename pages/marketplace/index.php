@@ -118,6 +118,9 @@ $items = [
     <div class="">
       <h5>Explore R.I.K.E MarketPlace's Ecosystem</h5>
       <p>The R.I.K.E Marketplace is a platform designed to showcase and promote groundbreaking
+    <div class="my-5">
+      <h5>Explore R.I.K.E MarketPlace's Research Ecosystem</h5>
+      <p>The R.I.K.E Research Marketplace is a platform designed to showcase and promote groundbreaking
         research initiatives. By bridging the gap between research and market accessibility, this marketplace aims to
         accelerate the commercialization of innovative ideas, ultimately contributing to societal and economic
         advancement.

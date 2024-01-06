@@ -9,9 +9,10 @@ $featuredThumbnail = !empty($featuredPost->thumbnail) ? url_for_root('uploads/' 
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <link href="css/blog.css" rel="stylesheet">
-<section class="section w-100 bg-half-100 pb-5">
 
-  <?php if (!empty($featuredPost)): ?>
+<section class="section bg-half-100" style="padding-top: 7.5rem !important;padding-bottom: 7.5rem !important;">
+
+  <?php if (!empty($featuredPost)) : ?>
     <div class="container mt-1 px-1">
       <div class="row">
         <div class="col-md-6 featured-post order-md-1 order-2  d-flex justify-content align-items-center">
@@ -40,15 +41,14 @@ $featuredThumbnail = !empty($featuredPost->thumbnail) ? url_for_root('uploads/' 
   <?php endif ?>
 
 
-  <div class="container my-5">
+  <div class="container">
     <div class="row">
 
       <!-- Article Section (full width on small screens) -->
       <div class="col-12 col-lg-9">
         <h4 class="mb-4">Explore</h4>
         <div class="list-group d-flex flex-row overflow-auto py-2">
-          <a href="#" class="list-group-item list-group-item-action active rounded-pill" aria-current="true"
-            data-id="All Articles">All</a>
+          <a href="#" class="list-group-item list-group-item-action active rounded-pill" aria-current="true" data-id="All Articles">All</a>
           <?php foreach (Category::find_by_undeleted(['order' => "ASC"]) as $key => $value) { ?>
             <a href="#" class="list-group-item list-group-item-action rounded-pill" data-id="<?php echo $value->id ?>">
               <?php echo $value->name . " (" . count(Blog::find_by_category(['category_id' => $value->id])) . ")" ?>
@@ -130,28 +130,32 @@ $featuredThumbnail = !empty($featuredPost->thumbnail) ? url_for_root('uploads/' 
 <!-- jQuery and Bootstrap 5.0.2 JS -->
 
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     // Load the first page of articles
     loadArticles(1);
 
     // Handle category filter
-    $('.list-group-item-action').on('click', function (e) {
+    $('.list-group-item-action').on('click', function(e) {
       e.preventDefault();
       $(this).addClass('active').siblings().removeClass('active');
       const category = $(this).data('id');
       console.log(category)
       // Fetch articles by category using AJAX and update the list
-      $.get('ajax/articles.php', { category }, function (data) {
+      $.get('ajax/articles.php', {
+        category
+      }, function(data) {
         $('#articleList').html(data);
         $('#pagination').hide();
       });
     });
     // Handle pagination
-    $(document).on('click', '#pagination .page-link', function (e) {
+    $(document).on('click', '#pagination .page-link', function(e) {
       e.preventDefault();
       const page = $(this).text();
       // Fetch articles by page using AJAX and update the list
-      $.get('ajax/articles.php', { page }, function (data) {
+      $.get('ajax/articles.php', {
+        page
+      }, function(data) {
         $('#articleList').html(data);
       });
     });
@@ -159,11 +163,12 @@ $featuredThumbnail = !empty($featuredPost->thumbnail) ? url_for_root('uploads/' 
 
   function loadArticles(page) {
     // Fetch articles using AJAX and update the list
-    $.get('ajax/articles.php', { page }, function (data) {
+    $.get('ajax/articles.php', {
+      page
+    }, function(data) {
       $('#articleList').html(data);
     });
   }
-
 </script>
 
 </body>
